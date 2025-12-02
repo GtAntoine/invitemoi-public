@@ -8,31 +8,11 @@ Ce document présente une **analyse honnête et sans complaisance** de l'échec 
 
 ---
 
-## 📊 Les Chiffres Réels (6 mois de lancement)
-
-### Objectifs vs Réalité
-
-| Métrique | Objectif MVP (6 mois) | Réalité | Écart |
-|----------|----------------------|---------|-------|
-| **Utilisateurs inscrits** | 3 000 | ~150 | **-95%** |
-| **Événements créés** | 1 500 | ~80 | **-95%** |
-| **Matches réussis** | 1 000 | ~15 | **-98%** |
-| **Retention J+7** | 50% | ~20% | **-60%** |
-| **DAU** | 500 | ~8 | **-98%** |
-| **NPS** | > 40 | ~35 | **-12%** |
 
 ### Investissement
 
-- **Temps de développement** : 4 mois (1 développeur full-time)
-- **Budget marketing** : ~2 000€ (Instagram/TikTok ads)
+- **Temps de développement** : 1 mois (1 développeur full-time)
 - **Coût d'infrastructure** : ~50€/mois (Supabase + Netlify)
-- **Total investi** : ~16 000€ (temps + budget)
-
-### ROI
-
-- **Revenus générés** : 0€ (pas de monétisation)
-- **Utilisateurs actifs finaux** : ~15
-- **ROI** : **-100%**
 
 ---
 
@@ -43,17 +23,14 @@ Ce document présente une **analyse honnête et sans complaisance** de l'échec 
 **InviteMoi n'a pas atteint son product-market fit** et n'a jamais dépassé le stade de "projet personnel avec quelques early adopters curieux".
 
 **Symptômes clairs :**
-- Taux d'abandon de 85% après inscription
 - Aucun événement réalisé IRL après 3 mois
 - Bouche-à-oreille inexistant (K-factor ~0.1)
-- Coûts d'acquisition prohibitifs (13€/user pour des users inactifs)
 - Impossibilité de créer un effet réseau
 
 ### Ce Qui Fonctionnait (Mais Insuffisant)
 
 **Aspects positifs (qui ne suffisent pas) :**
 
-✅ **Innovation UX** : Les 10-15 utilisateurs actifs adoraient le swipe
 ✅ **Design** : Feedback très positif sur le glassmorphism et les animations
 ✅ **Technique** : Zéro bug critique, performance excellente
 ✅ **Proposition de valeur** : Comprise et appréciée par ceux qui l'utilisaient
@@ -70,18 +47,6 @@ Ce document présente une **analyse honnête et sans complaisance** de l'échec 
 
 InviteMoi est une **marketplace** : il faut des hôtes ET des invités. En dessous d'un certain seuil d'utilisateurs, l'utilité de l'app est proche de zéro.
 
-**Mathématiques du désastre :**
-
-Avec 150 utilisateurs répartis sur 10 villes :
-- **Paris** : 60 users (30 hôtes, 30 invités)
-- **Lyon** : 25 users (12 hôtes, 13 invités)
-- **Autres** : 65 users répartis sur 8 villes
-
-**Résultat :**
-- Un hôte à Lyon crée un événement → 13 invités potentiels
-- Parmi ces 13, seulement 3-4 sont actifs dans la semaine
-- Parmi ces 3-4, seulement 1-2 matchent avec les intérêts de l'événement
-- **Probabilité de match : ~5-10%**
 
 **Cercle vicieux :**
 ```
@@ -89,13 +54,6 @@ Peu d'hôtes → Peu de matches → Invités frustrés → Invités partent
                     ↓
              Encore moins d'hôtes
 ```
-
-**Seuil critique estimé :**
-- **Minimum viable** : 500 users actifs/ville (250 hôtes, 250 invités)
-- **Optimal** : 2000 users actifs/ville
-- **Réalité InviteMoi** : 60 users à Paris (12% du minimum viable)
-
-**Conclusion PO :** J'ai sous-estimé d'un facteur 10 le nombre d'utilisateurs nécessaires pour rendre l'app utile.
 
 ---
 
@@ -109,49 +67,15 @@ Peu d'hôtes → Peu de matches → Invités frustrés → Invités partent
 
 Les plateformes à deux côtés nécessitent un **investissement marketing massif** pour atteindre le seuil critique.
 
-**Budget alloué vs budget nécessaire :**
-
-| Poste | Budget Alloué | Budget Nécessaire | Écart |
-|-------|---------------|-------------------|-------|
-| Ads digitales (Instagram, TikTok) | 2 000€ | 15 000€ | **-87%** |
-| Influenceurs | 0€ | 10 000€ | **-100%** |
-| Événements IRL (soirées lancement) | 0€ | 5 000€ | **-100%** |
-| Campus ambassadors | 0€ | 10 000€ | **-100%** |
-| Partenariats restaurants/théâtres | 0€ | 10 000€ | **-100%** |
-| **TOTAL** | **2 000€** | **50 000€** | **-96%** |
-
-**Résultat des 2 000€ dépensés :**
-- **Impressions** : ~300 000
-- **Clics** : ~3 000 (CTR 1%)
-- **Inscriptions** : ~150 (conversion 5%)
-- **CAC** : 13€/user (trop élevé)
-- **Users actifs après 7 jours** : ~30 (retention 20%)
-
-**Pourquoi les ads n'ont pas fonctionné :**
-- Pas de preuve sociale : "Pourquoi je serais le premier ?"
-- Pas d'urgence : "Je m'inscrirai plus tard"
-- Pas de garantie de match : "Et si personne ne répond ?"
 
 **Ce qu'il aurait fallu :**
 - **Phase 1 (Seeding)** : Recruter manuellement 100 early adopters à Paris (gratuit, événements IRL)
 - **Phase 2 (Proof of concept)** : User testimonials, événements réalisés, confiance établie
 - **Phase 3 (Scale)** : Ads avec preuve sociale ("500 événements réalisés ce mois-ci à Paris")
 
-**Erreur PO :** J'ai sauté directement à la Phase 3 sans faire Phase 1 et 2.
-
 ---
 
-### Cause #3 : Stratégie de Lancement Dispersée
-
-**Ce que j'ai fait (mauvais) :**
-- Lancement simultané dans 10 villes françaises
-- Stratégie d'acquisition uniforme (ads nationales)
-- Aucune concentration de ressources
-
-**Résultat :**
-- 15 users à Marseille → inutile
-- 25 users à Lyon → insuffisant
-- 60 users à Paris → presque suffisant, mais pas assez
+### Cause #3 : Stratégie de Lancement 
 
 **Ce que j'aurais dû faire :**
 - **Lancement Paris uniquement** (80% de la population française accessible en TGV depuis Paris)
@@ -181,7 +105,7 @@ Les plateformes à deux côtés nécessitent un **investissement marketing massi
 #### Étape 2 : Recrutement Manuel
 - Contacter 500 personnes personnellement
 - Leur offrir accès VIP (gratuit à vie)
-- Organiser 3 soirées de lancement IRL (100€/soirée)
+- Organiser soirée de lancement IRL
 
 #### Étape 3 : Activation Forcée
 - Demander à chaque early adopter de créer 1 événement
@@ -201,16 +125,9 @@ Les plateformes à deux côtés nécessitent un **investissement marketing massi
 
 **Contexte personnel :**
 - Projet solo (développement + product + marketing)
-- Budget limité (2 000€ de poche personnelle)
+- Budget limité
 - Pas de co-founder avec expertise marketing
-- Temps limité (side project, pas full-time)
-
-**Impact sur le projet :**
-- Développement : 4 mois (aurait dû être 2 mois pour tester plus vite)
-- Over-engineering : 11k lignes de code (aurait dû être 3k pour MVP)
-- Focus technique vs marketing (80% dev / 20% marketing, aurait dû être 50/50)
-
-**Erreur PO :** J'ai construit une Lamborghini alors que j'avais besoin d'une trottinette pour tester.
+- Temps limité
 
 ---
 
