@@ -1,0 +1,22 @@
+
+BEGIN
+  -- Vérifier si les notifications par email sont activées pour l'utilisateur
+  IF EXISTS (
+    SELECT 1 FROM user_preferences 
+    WHERE user_id = (SELECT created_by FROM events WHERE id = NEW.event_id)
+    AND email_enabled = true
+  ) THEN
+    -- Envoyer l'email via Supabase Edge Functions
+    PERFORM net.http_post(
+      'https://ueurliamkagzrbhdqdmx.supabase.co/functions/v1/send-notification-email',
+      jsonb_build_object(
+        'eventId', NEW.event_id,
+        'applicantId', NEW.user_id,
+        'message', NEW.message,
+        'type', 'new_application'
+      )::text,
+      'application/json'
+    );
+  END IF;
+  RETURN NEW;
+END;

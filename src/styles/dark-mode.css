@@ -1,0 +1,124 @@
+/* src/styles/dark-mode.css */
+@layer base {
+  .dark {
+    color-scheme: dark;
+  }
+
+  .dark body {
+    @apply bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100;
+  }
+
+  /* Glass components */
+  .dark .glass-card {
+    @apply bg-gray-800/90 text-gray-100 border-gray-700/20;
+  }
+
+  .dark .glass-card::before {
+    @apply from-gray-700/10;
+  }
+
+  .dark .glass-input {
+    @apply bg-gray-800/90 text-gray-100 border-gray-700/20;
+  }
+
+  .dark .glass-button {
+    @apply from-primary-600/90 to-secondary-600/90;
+  }
+
+  .dark .glass-button:hover {
+    @apply from-primary-700/90 to-secondary-700/90;
+  }
+
+  /* Text and backgrounds */
+  .dark .bg-white {
+    @apply bg-gray-800;
+  }
+
+  .dark .bg-gray-50 {
+    @apply bg-gray-900;
+  }
+
+  .dark .bg-gray-100 {
+    @apply bg-gray-800;
+  }
+
+  /* Text colors - Fixed circular dependencies */
+  .dark .text-gray-900 {
+    color: #f3f4f6; /* gray-100 */
+  }
+
+  .dark .text-gray-800 {
+    color: #e5e7eb; /* gray-200 */
+  }
+
+  .dark .text-gray-700 {
+    color: #d1d5db; /* gray-300 */
+  }
+
+  .dark .text-gray-600 {
+    color: #9ca3af; /* gray-400 */
+  }
+
+  .dark .text-gray-500 {
+    color: #6b7280; /* gray-500 */
+  }
+
+  /* Borders */
+  .dark .border-gray-300 {
+    @apply border-gray-700;
+  }
+
+  .dark .border-gray-200 {
+    @apply border-gray-800;
+  }
+
+  /* Hover states */
+  .dark .hover\:bg-gray-50:hover {
+    @apply hover:bg-gray-900;
+  }
+
+  .dark .hover\:bg-gray-100:hover {
+    @apply hover:bg-gray-800;
+  }
+
+  .dark .hover\:bg-gray-200:hover {
+    @apply hover:bg-gray-700;
+  }
+
+  /* Shadows */
+  .dark .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  }
+
+  .dark .shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Form elements */
+  .dark input,
+  .dark textarea,
+  .dark select {
+    @apply bg-gray-800 border-gray-700 text-gray-100;
+  }
+
+  .dark input:focus,
+  .dark textarea:focus,
+  .dark select:focus {
+    @apply border-primary-500 ring-primary-500/30;
+  }
+
+  /* Buttons */
+  .dark .btn-primary {
+    @apply from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800;
+  }
+
+  .dark .btn-secondary {
+    @apply from-secondary-600 to-secondary-700 hover:from-secondary-700 hover:to-secondary-800;
+  }
+
+  /* Placeholder text */
+  .dark input::placeholder,
+  .dark textarea::placeholder {
+    color: #6b7280; /* gray-500 */
+  }
+}
