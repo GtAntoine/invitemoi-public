@@ -1,7 +1,6 @@
-# 🎭 InviteMoi — Product Owner Case Study
+# 🎭 InviteMoi - Case Study
 
-> Portfolio complet de Product Ownership : analyse d'un échec instructif et learnings actionnables
-> pour une plateforme sociale innovante de partage d'expériences culturelles
+> Portfolio complet d'une plateforme sociale innovante de partage d'expériences culturelles
 
 <div align="center">
   <img src="./docs/landing-hero.png" alt="Interface InviteMoi" width="100%" />
@@ -30,7 +29,7 @@ Contrairement aux applications d'événements classiques (Meetup, Eventbrite), I
 
 Ce système inversé crée une **dynamique sociale innovante** où les rôles sont flexibles et où chacun peut à la fois offrir et recevoir.
 
-Ce repo documente **mon travail de Product Owner** sur ce produit :
+Ce repo documente mon travail sur ce produit :
 - Vision produit et positionnement marché
 - Personas utilisateurs
 - Architecture fonctionnelle
@@ -203,11 +202,6 @@ Interface moderne avec :
   - TypeScript React (.tsx) : 8k lignes
   - **100+ fichiers** TS/TSX
 
-**Comparaison avec d'autres projets :**
-- [TuteurPrivé](https://github.com/GtAntoine/tuteur-prive-public/#-tuteurpriv%C3%A9--product-owner-case-study) : 15k lignes (application éducative avec IA)
-- InviteMoi : 11.7k lignes (plateforme sociale complexe)
-- Ratio code/fonctionnalité : Très optimisé (architecture modulaire)
-
 ---
 
 ## 📊 Architecture Technique
@@ -272,11 +266,7 @@ interface Application {
 [Voir analyse post-mortem](./docs/05-post-mortem.md)
 ---
 
-## 🎯 Positionnement pour un Recruteur
-
-Ce portfolio démontre une **capacité d'analyse post-mortem** et d'apprentissage à partir d'un échec, compétences essentielles pour un Product Owner.
-
-### Compétences Product Owner Démontrées
+### Compétences Démontrées
 
 - ✅ **Vision produit** : Identification d'un espace blanc marché (cultural networking)
 - ✅ **Innovation UX** : Introduction du swipe dans un contexte non-dating
@@ -302,7 +292,6 @@ Product Owner | Développeur Full-Stack
 
 - LinkedIn: [linkedin.com/in/antoinegoethals](https://www.linkedin.com/in/antoinegoethals/)
 - Email: antoine.gt@orange.fr
-- Portfolio: [TuteurPrivé](https://github.com/GtAntoine/tuteur-prive-public/#-tuteurpriv%C3%A9--product-owner-case-study) | InviteMoi
 
 Passionné par l'innovation produit et les expériences utilisateur qui changent les comportements
 
