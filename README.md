@@ -1,7 +1,7 @@
 # 🎭 InviteMoi — Product Owner Case Study
 
-> Portfolio complet de Product Ownership autour de [InviteMoi](https://invitemoi.netlify.app/),
-> une plateforme sociale innovante qui réinvente le partage d'expériences culturelles
+> Portfolio complet de Product Ownership : analyse d'un échec instructif et learnings actionnables
+> pour une plateforme sociale innovante de partage d'expériences culturelles
 
 <div align="center">
   <img src="./docs/landing-hero.png" alt="Interface InviteMoi" width="100%" />
@@ -13,8 +13,8 @@
 
 ## 🔗 Liens Utiles
 
-- **Application Live :** [invitemoi.netlify.app](https://invitemoi.netlify.app/)
-- **Repository :** Ce projet
+- **Repository :** [github.com/GtAntoine/invitemoi-public](https://github.com/GtAntoine/invitemoi-public)
+- **Application :** Projet fermé (voir post-mortem pour analyse)
 
 ---
 
