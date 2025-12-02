@@ -9,12 +9,6 @@
   <em>Landing page de l'application InviteMoi</em>
 </div>
 
----
-
-## 🔗 Liens Utiles
-
-- **Repository :** [github.com/GtAntoine/invitemoi-public](https://github.com/GtAntoine/invitemoi-public)
-- **Application :** Projet fermé (voir post-mortem pour analyse)
 
 ---
 
@@ -204,14 +198,13 @@ Interface moderne avec :
 
 ### Ampleur du Projet
 
-- **11 720 lignes de code** dans `src/`
-  - TypeScript (.ts) : 3 316 lignes
-  - TypeScript React (.tsx) : 8 404 lignes
-  - **127 fichiers** TS/TSX
-  - **24 dossiers** de composants
+- **12k lignes de code** dans `src/`
+  - TypeScript (.ts) : 4k lignes
+  - TypeScript React (.tsx) : 8k lignes
+  - **100+ fichiers** TS/TSX
 
 **Comparaison avec d'autres projets :**
-- TuteurPrivé : 15k lignes (application éducative avec IA)
+- [TuteurPrivé](https://github.com/GtAntoine/tuteur-prive-public/#-tuteurpriv%C3%A9--product-owner-case-study) : 15k lignes (application éducative avec IA)
 - InviteMoi : 11.7k lignes (plateforme sociale complexe)
 - Ratio code/fonctionnalité : Très optimisé (architecture modulaire)
 
@@ -270,58 +263,13 @@ interface Application {
 
 ## 📉 Résultats & Learnings : Un Échec Instructif
 
-### Métriques Réelles (6 mois de lancement)
-
-- **Utilisateurs inscrits** : ~150 (vs objectif 3 000)
-- **Événements créés** : ~80 (vs objectif 1 500)
-- **Matches réussis** : ~15 (vs objectif 1 000)
-- **Retention J+7** : ~20% (vs objectif 50%)
-- **Taux d'abandon** : 85% après inscription
-
 ### Constat d'Échec
 
 **InviteMoi n'a pas atteint son product-market fit** malgré une innovation UX forte et une execution technique solide.
 
 ### Pourquoi le Projet a Échoué
 
-#### 1. Problème du Seuil Critique (Cold Start Problem)
-
-**La plateforme à deux côtés nécessite une masse critique d'utilisateurs :**
-
-- **Cercle vicieux** : Pas assez d'hôtes → Pas de matches → Invités partent → Encore moins d'hôtes
-- **Densité locale insuffisante** : Pour qu'un utilisateur à Lyon trouve un match, il faut 200-300 users actifs dans la ville
-- **Effet réseau non atteint** : En dessous de 1000 users/ville, l'utilité de l'app est proche de zéro
-
-**Ce que j'ai sous-estimé :**
-- Le marketing nécessaire pour atteindre ce seuil (budget : 50k€ minimum)
-- Le temps requis (12-18 mois minimum, pas 6 mois)
-- La nécessité d'un lancement hyper-localisé (1 ville uniquement)
-
-#### 2. Budget Marketing Insuffisant
-
-**Acquisition organique trop lente :**
-- **Budget alloué** : ~2 000€ (posts sponsorisés Instagram/TikTok)
-- **Budget nécessaire** : ~50 000€ (influenceurs, événements IRL, campus ambassadors)
-- **CAC réel** : 13€/user (vs cible 5€)
-- **Croissance** : +30 users/mois (vs besoin de +500/mois)
-
-**Ce qui n'a pas fonctionné :**
-- Posts sponsorisés : Clics mais pas de rétention (curiosité, pas de besoin réel)
-- SEO : Trop long (6-12 mois pour ranker)
-- Referral : Impossible sans utilisateurs existants satisfaits
-
-#### 3. Timing et Chicken-and-Egg
-
-**Paradoxe de la plateforme à deux côtés :**
-- Les hôtes ne viennent pas car pas d'invités
-- Les invités ne viennent pas car pas d'hôtes
-- Impossible de résoudre sans investissement marketing massif
-
-**Erreur stratégique :**
-- Lancement trop large : 10 villes en France (aurait dû être Paris uniquement)
-- Pas de stratégie de "seeding" : aurait dû recruter manuellement 100 early adopters
-- Pas de partenariats : restaurants/théâtres auraient pu être des hôtes initiaux
-
+[Voir analyse post-mortem](./docs/05-post-mortem.md)
 ---
 
 ## 🎯 Positionnement pour un Recruteur
@@ -345,33 +293,6 @@ Ce portfolio démontre une **capacité d'analyse post-mortem** et d'apprentissag
 - ✅ **Innovation technique** : Stack moderne et performante (React 18, Vite, Framer Motion)
 - ✅ **Maturité** : Acceptation de l'échec et focus sur les learnings
 
-### Learnings Clés pour Futurs Projets
-
-1. **Plateformes à deux côtés = budget marketing massif** : 50k€ minimum pour cold start
-2. **Lancement hyper-localisé** : 1 ville, pas 10 (concentration vs dispersion)
-3. **Seeding manuel nécessaire** : Recruter 100 early adopters avant lancement public
-4. **Partenariats critiques** : Restaurants/théâtres comme hôtes initiaux pour amorcer
-5. **Timeline réaliste** : 12-18 mois pour atteindre effet réseau, pas 6 mois
-6. **Validation avant build** : Aurait dû valider la volonté de payer du marketing (landing page test)
-
-### Ce que je Ferais Différemment
-
-**Si je relançais InviteMoi avec 50k€ de budget :**
-
-1. **Lancement Paris uniquement** : Concentration sur 1 ville pour atteindre densité critique
-2. **Campus ambassadors** : Recruter 20 étudiants payés pour onboarder leurs amis
-3. **Partenariats restaurants** : 50 restaurants partenaires offrent 10% réduction si invité via InviteMoi
-4. **Événements IRL** : Organiser 10 soirées "InviteMoi Meetup" pour créer communauté initiale
-5. **Influenceurs micro** : 50 influenceurs 5k-20k followers (budget 10k€) pour awareness ciblée
-6. **Referral agressif** : 20€ de crédit restaurant pour parrain + filleul (incentive fort)
-
-**Avec ces ajustements, probabilité de succès : 60% vs 5% initial**
-
-### Certifications
-
-- **[Professional Scrum Product Owner II](https://www.credly.com/badges/e66d6dd1-b6c9-4ed4-a78f-27612df6d5ae)**
-- **[Professional Scrum Master I](https://www.credly.com/badges/bc483041-bdf5-4ecc-87d0-f2bb0d16bd8d)**
-
 ---
 
 ## 📞 Contact
@@ -381,7 +302,7 @@ Product Owner | Développeur Full-Stack
 
 - LinkedIn: [linkedin.com/in/antoinegoethals](https://www.linkedin.com/in/antoinegoethals/)
 - Email: antoine.gt@orange.fr
-- Portfolio: [TuteurPrivé](https://tuteurprive.com) | InviteMoi
+- Portfolio: [TuteurPrivé](https://github.com/GtAntoine/tuteur-prive-public/#-tuteurpriv%C3%A9--product-owner-case-study) | InviteMoi
 
 Passionné par l'innovation produit et les expériences utilisateur qui changent les comportements
 
