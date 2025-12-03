@@ -286,24 +286,8 @@ interface Application {
 
 ### Compétences Transverses
 
-- ✅ **Double casquette** : Capacité à designer ET implémenter (11k lignes de code)
+- ✅ **Double casquette** : Capacité à designer ET implémenter
 - ✅ **User-centric** : Chaque feature répond à un pain point identifié
 - ✅ **Design thinking** : Interface moderne et engageante (glassmorphism)
-- ✅ **Innovation technique** : Stack moderne et performante (React 18, Vite, Framer Motion)
 - ✅ **Maturité** : Acceptation de l'échec et focus sur les learnings
 
----
-
-## 📞 Contact
-
-**Antoine Goethals**
-Product Owner | Développeur Full-Stack
-
-- LinkedIn: [linkedin.com/in/antoinegoethals](https://www.linkedin.com/in/antoinegoethals/)
-- Email: antoine.gt@orange.fr
-
-Passionné par l'innovation produit et les expériences utilisateur qui changent les comportements
-
----
-
-*Ce README fait partie d'un portfolio Product Owner. Pour plus de détails sur les décisions produit, l'architecture fonctionnelle et les KPIs, consultez le dossier [`docs/`](./docs).*
