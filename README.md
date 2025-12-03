@@ -4,6 +4,12 @@
 
 **🔗 Démo en ligne :** [invitemoi.netlify.app](https://deploy-preview-1--invitemoi.netlify.app/events)
 
+<div align="center">
+  <img src="./public/images/landing-head.png" alt="Page d'accueil InviteMoi" width="100%" />
+  <br/>
+  <em>Page d'accueil de l'application</em>
+</div>
+
 ---
 
 ## 📊 Analyse de Marché
@@ -44,7 +50,7 @@ Ces problèmes s'appliquent directement aux plateformes d'événements culturels
 
 ### La Différence InviteMoi
 
-> **"This is not a dating app"** — mais les principes de connexion humaine authentique s'appliquent.
+> **"This is not a dating app"** - mais les principes de connexion humaine authentique s'appliquent.
 
 InviteMoi résout ces problèmes par :
 
@@ -192,6 +198,12 @@ Interface moderne avec :
 - **Dark mode** : Support natif avec transitions douces
 - **Framer Motion** : Animations performantes et élégantes
 
+<div align="center">
+  <img src="./public/images/mobile-menu-UX.gif" alt="Animation du menu mobile" width="300" />
+  <br/>
+  <em>Menu mobile avec animations fluides et glassmorphism</em>
+</div>
+
 **Objectif :**
 - Se démarquer des interfaces plates et ennuyeuses
 - Créer une expérience premium et moderne
@@ -325,7 +337,7 @@ interface Application {
 
 ---
 
-## 🚀 Roadmap V2 — Vision Monétisation
+## 🚀 Roadmap V2 - Vision Monétisation
 
 Bien que le projet n'ait pas atteint son PMF, une roadmap claire avait été définie pour transformer InviteMoi en plateforme viable économiquement.
 

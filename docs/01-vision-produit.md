@@ -206,13 +206,13 @@ Aucune plateforme ne permet de **matcher des hôtes généreux avec des invités
 
 ## 💬 User Testimonials (Hypothétiques - MVP)
 
-> "Enfin une app qui assume que je veux me faire inviter sans culpabiliser !" — Marie, 24 ans
+> "Enfin une app qui assume que je veux me faire inviter sans culpabiliser !" - Marie, 24 ans
 
-> "J'adore inviter au restaurant mais mes amis sont toujours occupés. InviteMoi m'a permis de rencontrer des gens passionnants." — Thomas, 32 ans
+> "J'adore inviter au restaurant mais mes amis sont toujours occupés. InviteMoi m'a permis de rencontrer des gens passionnants." - Thomas, 32 ans
 
-> "Le swipe est génial, ça rend la gestion des candidatures super rapide et fun." — Sophie, 28 ans
+> "Le swipe est génial, ça rend la gestion des candidatures super rapide et fun." - Sophie, 28 ans
 
-> "J'ai assisté à 3 concerts gratuits en 2 mois et rencontré des personnes incroyables. Meilleure app de l'année." — Lucas, 26 ans
+> "J'ai assisté à 3 concerts gratuits en 2 mois et rencontré des personnes incroyables. Meilleure app de l'année." - Lucas, 26 ans
 
 ---
 

@@ -11,7 +11,7 @@ Chaque utilisateur peut jouer **les deux rôles** selon le contexte, créant une
 
 ---
 
-## 👤 Persona 1 : Marie — L'Étudiante Curieuse
+## 👤 Persona 1 : Marie - L'Étudiante Curieuse
 
 ### Profil
 - **Âge** : 23 ans
@@ -58,7 +58,7 @@ Chaque utilisateur peut jouer **les deux rôles** selon le contexte, créant une
 
 ---
 
-## 👤 Persona 2 : Thomas — Le Professionnel Généreux
+## 👤 Persona 2 : Thomas - Le Professionnel Généreux
 
 ### Profil
 - **Âge** : 34 ans
@@ -105,7 +105,7 @@ Chaque utilisateur peut jouer **les deux rôles** selon le contexte, créant une
 
 ---
 
-## 👤 Persona 3 : Sophie — La Nomade Digitale
+## 👤 Persona 3 : Sophie - La Nomade Digitale
 
 ### Profil
 - **Âge** : 29 ans
@@ -152,7 +152,7 @@ Chaque utilisateur peut jouer **les deux rôles** selon le contexte, créant une
 
 ---
 
-## 👤 Persona 4 : Karim — L'Expatrié Timide
+## 👤 Persona 4 : Karim - L'Expatrié Timide
 
 ### Profil
 - **Âge** : 27 ans
