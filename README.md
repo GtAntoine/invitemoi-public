@@ -3,12 +3,7 @@
 > Portfolio complet de Product Ownership : analyse d'un échec instructif et learnings actionnables
 > pour une plateforme sociale innovante de partage d'expériences culturelles
 
-<div align="center">
-  <img src="./docs/landing-hero.png" alt="Interface InviteMoi" width="100%" />
-  <br/>
-  <em>Landing page de l'application InviteMoi</em>
-</div>
-
+**🔗 Démo en ligne :** [invitemoi.netlify.app](https://deploy-preview-1--invitemoi.netlify.app/events)
 
 ---
 
@@ -37,6 +32,20 @@ Ce repo documente **mon travail de Product Owner** sur ce produit :
 - Fonctionnalités innovantes
 - Design UX/UI différenciant
 - KPIs et mesure d'impact
+
+---
+
+## 📸 Aperçu de l'Application
+
+<div align="center">
+  <img src="./public/images/landing.png" alt="Landing page InviteMoi" width="100%" />
+  <br/>
+  <em>Landing page de l'application</em>
+  <br/><br/>
+  <img src="./public/images/events.png" alt="Page des événements" width="100%" />
+  <br/>
+  <em>Interface de navigation et découverte des événements</em>
+</div>
 
 ---
 
