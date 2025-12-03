@@ -143,7 +143,7 @@ Interface moderne avec :
 - **Dark mode** : Support natif avec transitions douces
 - **Framer Motion** : Animations performantes et élégantes
 
-**Objectif PO :**
+**Objectif :**
 - Se démarquer des interfaces plates et ennuyeuses
 - Créer une expérience premium et moderne
 - Augmenter l'engagement par le plaisir visuel
@@ -179,7 +179,7 @@ Interface moderne avec :
 | **Système** | Swipe bidirectionnel | Swipe unidirectionnel (hôte) |
 | **Value** | Date | Culture + connexion |
 
-**Conclusion PO :** InviteMoi occupe un **espace blanc** entre le social networking (Meetup) et le dating (Tinder), en créant une catégorie nouvelle : **le cultural networking avec économie de générosité**.
+**Conclusion :** InviteMoi occupe un **espace blanc** entre le social networking (Meetup) et le dating (Tinder), en créant une catégorie nouvelle : **le cultural networking avec économie de générosité**.
 
 ---
 
@@ -273,6 +273,64 @@ interface Application {
 ### Pourquoi le Projet a Échoué
 
 [Voir analyse post-mortem](./docs/05-post-mortem.md)
+
+---
+
+## 🚀 Roadmap V2 — Vision Monétisation
+
+Bien que le projet n'ait pas atteint son PMF, une roadmap claire avait été définie pour transformer InviteMoi en plateforme viable économiquement.
+
+### Modèle de Monétisation : Affiliation Lieux Culturels
+
+**Concept :** Partenariats avec restaurants, théâtres, musées et cinémas qui paient pour être mis en avant lors de la création d'événements.
+
+#### Comment ça marche ?
+
+1. **Lieux Premium Partenaires**
+   - Badge "Partenaire InviteMoi" sur les suggestions d'adresses
+   - Mise en avant dans l'autocomplete Google Places
+   - Apparition prioritaire dans les recommandations géolocalisées
+
+2. **Modèle de Revenus**
+   - **Commission par réservation** : 5-10% sur les réservations confirmées via l'app
+   - **Abonnement mensuel** : Forfait fixe pour visibilité garantie (€99-299/mois)
+   - **Pay-per-click** : Lieux payent pour chaque clic sur leur profil
+
+3. **Valeur pour les Lieux**
+   - Accès à une audience qualifiée (personnes cherchant des sorties culturelles)
+   - Visibilité auprès d'organisateurs d'événements généreux
+   - Tracking ROI : nombre de clics, réservations, taux de conversion
+
+4. **Valeur pour les Utilisateurs**
+   - Découverte de lieux de qualité vérifiés
+   - Offres exclusives partenaires (réductions, menus spéciaux)
+   - Expérience premium sans payer (financée par les lieux)
+
+### Map Interactive Géolocalisée (V2)
+
+**Fonctionnalité :** Carte interactive pour découvrir visuellement les événements et lieux autour de soi.
+
+#### Features
+
+- **Vue carte** : Visualisation des événements à proximité sur une carte interactive
+- **Filtres géographiques** : Recherche par rayon (500m, 1km, 5km, 10km+)
+- **Marqueurs dynamiques** : Différenciation visuelle (seeking-host vs offering-host)
+- **Clusters intelligents** : Regroupement automatique des événements proches
+- **Lieux partenaires** : Badge spécial sur la carte pour les partenaires premium
+
+#### Stack Technique Envisagé
+
+- **Mapbox GL JS** ou **Google Maps API** (décision selon coûts)
+- **Geolocation API** : Détection position utilisateur
+- **PostGIS** : Extension PostgreSQL pour requêtes géospatiales performantes
+- **Clustering** : Algorithme Supercluster pour performances mobile
+
+#### Impact Attendu
+
+- **+40% engagement** : Exploration visuelle vs liste textuelle
+- **+25% découvrabilité lieux** : Utilisateurs découvrent événements hors zone habituelle
+- **Meilleur matching** : Géolocalisation précise réduit frictions logistiques
+
 ---
 
 ### Compétences Démontrées
