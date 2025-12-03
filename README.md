@@ -6,6 +6,55 @@
 
 ---
 
+## 📊 Analyse de Marché
+
+### Le Problème des Plateformes Sociales Actuelles
+
+Les applications de rencontre et d'événements souffrent des mêmes problèmes systémiques :
+
+**Choice Overload**
+- L'abondance d'options est contre-productive
+- Les utilisateurs passent plus de temps à chercher qu'à vivre des expériences
+- Paradoxe du choix : plus d'options = moins de satisfaction
+
+**Time-Consuming**
+- Les millennials passent **10h/semaine** sur les apps de rencontre
+- Temps perdu en swipes infinis sans résultats concrets
+- Fatigue décisionnelle accrue
+
+**Bad Matching**
+- Algorithmes généralistes qui ne comprennent pas les nuances
+- Profils incomplets ou trompeurs
+- Déconnexion entre attentes et réalité
+
+### L'Opportunité de Marché
+
+| Indicateur | Valeur | Source |
+|-----------|--------|--------|
+| **Budget annuel/utilisateur** | $243/an | Industrie dating online |
+| **Marché social apps** | $3B+ annuel | Croissance continue |
+| **Adoption prévue** | 50%+ des connexions en ligne d'ici 2031 | Tendance démographique |
+
+**Application à InviteMoi :**
+
+Ces problèmes s'appliquent directement aux plateformes d'événements culturels :
+- **Meetup** : Trop d'événements, filtrage difficile
+- **Eventbrite** : Liste interminable sans personnalisation
+- **Facebook Events** : Noyé dans le bruit social
+
+### La Différence InviteMoi
+
+> **"This is not a dating app"** — mais les principes de connexion humaine authentique s'appliquent.
+
+InviteMoi résout ces problèmes par :
+
+1. **Curation par l'intention** : Les événements ont un contexte (seeking/offering)
+2. **Swipe ciblé** : Pas de choix infini, l'hôte décide
+3. **Engagement limité** : Pas de scroll infini, focus sur la qualité
+4. **Profils enrichis** : Centres d'intérêt, langues, social links = meilleur matching
+
+---
+
 ## 👋 Contexte
 
 **InviteMoi** est une plateforme sociale révolutionnaire qui transforme la façon dont les gens partagent des expériences culturelles. L'application permet aux utilisateurs de :
