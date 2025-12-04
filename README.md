@@ -199,9 +199,10 @@ Interface moderne avec :
 - **Framer Motion** : Animations performantes et élégantes
 
 <div align="center">
-  <img src="./public/images/mobile-menu-UX.gif" alt="Animation du menu mobile" width="300" />
+  <img src="./public/images/mobile-menu-UX.gif" alt="Animation du menu mobile" width="45%" style="display: inline-block; margin: 10px;" />
+  <img src="./public/images/swipe.gif" alt="Animation du système de swipe" width="45%" style="display: inline-block; margin: 10px;" />
   <br/>
-  <em>Menu mobile avec animations fluides et glassmorphism</em>
+  <em>Menu mobile avec animations fluides • Système de swipe pour accepter/refuser les candidatures</em>
 </div>
 
 **Objectif :**
