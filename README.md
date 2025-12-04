@@ -1,5 +1,11 @@
 # <img src="https://github.com/GtAntoine/invitemoi-public/raw/main/public/logo.png" alt="InviteMoi" width="50" style="vertical-align: middle;"/> InviteMoi - Case Study
-
+<div style="display: flex; align-items: center;">
+  <img src="https://github.com/GtAntoine/invitemoi-public/raw/main/public/logo.png"
+       alt="InviteMoi"
+       width="50"
+       style="margin-right: 8px;" />
+  <h1>InviteMoi - Case Study</h1>
+</div>
 > Portfolio complet d'une plateforme sociale innovante de partage d'expériences culturelles
 
 **🔗 Démo en ligne :** [invitemoi.netlify.app](https://deploy-preview-1--invitemoi.netlify.app/events)
