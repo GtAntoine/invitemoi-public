@@ -67,7 +67,7 @@ InviteMoi résout ces problèmes par :
 
 - **Se faire inviter** → Profiter d'événements culturels sans dépenser
 - **Inviter quelqu'un** → Offrir des expériences et créer des connexions authentiques
-- **Swiper les candidatures** → Interface Tinder-like pour gérer les demandes
+- **Gérer les candidatures** → Interface intuitive avec gestes cachés à découvrir
 - **Construire son profil social** → Centres d'intérêt, langues, liens sociaux
 
 ### 🎯 La différence InviteMoi
@@ -126,24 +126,29 @@ Les documents détaillés se trouvent dans le dossier [`docs/`](./docs).
 
 ## 🚀 Innovations Produit
 
-### 1. Système de Swipe pour Candidatures
+### 1. Gestes Swipe : Une Fonctionnalité Cachée à Découvrir
 
-**Première application d'événements culturels** à intégrer le swipe (popularisé par Tinder) pour gérer les candidatures :
+**Approche "Hidden Feature" inspirée de Snapchat** : Pas de tutoriel, pas d'onboarding intrusif.
 
-- **Swipe droite** → Accepter la candidature
-- **Swipe gauche** → Refuser poliment
-- **Indicateurs visuels** → Feedback immédiat avec animations
-- **Double confirmation** → Boutons de validation pour éviter les erreurs
+L'utilisateur découvre naturellement qu'il peut swiper sur les candidatures :
+
+- **Swipe droite** → Accepter la candidature (animation verte)
+- **Swipe gauche** → Refuser poliment (animation rouge)
+- **Boutons visibles** → Pour ceux qui ne découvrent pas les gestes, les boutons "Accepter/Refuser" restent disponibles
+- **Feedback immédiat** → Animations fluides qui valident l'action
 
 ```
-[Photo candidat] → Swipe → [Animation] → [Notification envoyée]
+[Photo candidat] → Swipe intuitif → [Animation] → [Notification envoyée]
+              OU
+[Photo candidat] → Boutons classiques → [Même résultat]
 ```
 
-**Pourquoi c'est innovant :**
-- Interface familière et intuitive (adoption immédiate)
-- Gestion rapide de multiples candidatures
-- Expérience ludique vs interface administrative classique
-- Adapté mobile-first (80% des utilisateurs)
+**Pourquoi cette approche "découverte" :**
+- **Pas de friction** : Zéro onboarding, zéro tutoriel forcé
+- **Plaisir de la découverte** : L'utilisateur se sent malin en trouvant le raccourci
+- **Double accessibilité** : Gestes pour les power users, boutons pour les autres
+- **Effet "wow"** : Première application d'événements culturels avec gestes natifs cachés
+- **Mobile-first** : Les gestes sont naturels sur mobile (80% des utilisateurs)
 
 ### 2. Double Système Host/Guest
 
@@ -202,7 +207,7 @@ Interface moderne avec :
   <img src="./public/images/mobile-menu-UX.gif" alt="Animation du menu mobile" width="45%" style="display: inline-block; margin: 10px;" />
   <img src="./public/images/swipe.gif" alt="Animation du système de swipe" width="45%" style="display: inline-block; margin: 10px;" />
   <br/>
-  <em>Menu mobile avec animations fluides • Système de swipe pour accepter/refuser les candidatures</em>
+  <em>Menu mobile avec animations fluides • Gestes swipe cachés à découvrir (hidden feature)</em>
 </div>
 
 **Objectif :**
