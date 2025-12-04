@@ -1,4 +1,4 @@
-# <img src="https://github.com/GtAntoine/tuteur-prive-public/raw/main/public/images/logo.png" alt="TuteurPrivé" width="60" style="vertical-align: middle;"/> InviteMoi - Case Study
+# <img src="https://github.com/GtAntoine/invitemoi-public/raw/main/public/logo.png" alt="InviteMoi" width="50" style="vertical-align: middle;"/> InviteMoi - Case Study
 
 > Portfolio complet d'une plateforme sociale innovante de partage d'expériences culturelles
 
