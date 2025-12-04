@@ -12,6 +12,28 @@
 
 ---
 
+## 📑 Sommaire
+
+- [📊 Analyse de Marché](#-analyse-de-marché)
+- [👋 Contexte](#-contexte)
+- [📸 Aperçu de l'Application](#-aperçu-de-lapplication)
+- [🔍 Contenu du Portfolio](#-contenu-du-portfolio)
+- [🚀 Innovations Produit](#-innovations-produit)
+  - [1. Gestes Swipe : Fonctionnalité Cachée](#1-gestes-swipe--une-fonctionnalité-cachée-à-découvrir)
+  - [2. Double Système Host/Guest](#2-double-système-hostguest)
+  - [3. Profils Sociaux Enrichis](#3-profils-sociaux-enrichis)
+  - [4. Notifications Temps Réel](#4-notifications-temps-réel-intelligentes)
+  - [5. Design Glassmorphism](#5-design-glassmorphism--animations)
+  - [6. Géolocalisation](#6-géolocalisation--autocomplete)
+- [🆚 Positionnement Marché](#-positionnement-marché)
+- [🛠️ Stack Technique](#️-stack-technique)
+- [📊 Architecture Technique](#-architecture-technique)
+- [📉 Résultats & Learnings](#-résultats--learnings--un-échec-instructif)
+- [🚀 Roadmap V2](#-roadmap-v2--vision-monétisation)
+- [Contact](#-contact)
+
+---
+
 ## 📊 Analyse de Marché
 
 ### Le Problème des Plateformes Sociales Actuelles
@@ -208,6 +230,14 @@ Interface moderne avec :
   <img src="./public/images/swipe.gif" alt="Animation du système de swipe" width="45%" style="display: inline-block; margin: 10px;" />
   <br/>
   <em>Menu mobile avec animations fluides • Gestes swipe cachés à découvrir (hidden feature)</em>
+</div>
+
+**Mode Sombre :**
+
+<div align="center">
+  <img src="./public/images/dark-mode.png" alt="Interface en mode sombre" width="80%" />
+  <br/>
+  <em>Interface complète en dark mode avec effets glassmorphism préservés</em>
 </div>
 
 **Objectif :**
