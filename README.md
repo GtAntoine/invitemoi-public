@@ -234,7 +234,7 @@ Interface moderne avec :
 **Mode Sombre :**
 
 <div align="center">
-  <img src="./public/images/dark-mode.png" alt="Interface en mode sombre" width="80%" />
+  <img src="./public/images/dark-mode.png" alt="Interface en mode sombre" width="100%" />
   <br/>
   <em>Interface complète en dark mode avec effets glassmorphism préservés</em>
 </div>
