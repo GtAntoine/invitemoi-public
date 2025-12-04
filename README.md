@@ -30,7 +30,6 @@
 - [📊 Architecture Technique](#-architecture-technique)
 - [📉 Résultats & Learnings](#-résultats--learnings--un-échec-instructif)
 - [🚀 Roadmap V2](#-roadmap-v2--vision-monétisation)
-- [Contact](#-contact)
 
 ---
 
