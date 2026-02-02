@@ -2,7 +2,7 @@
 
 > Portfolio complet d'une plateforme sociale innovante de partage d'expériences culturelles
 
-**🔗 Démo en ligne :** [invitemoi.netlify.app](https://deploy-preview-1--invitemoi.netlify.app/events)
+**🔗 Démo en ligne :** [invitemoi.netlify.app](https://invitemoi.netlify.app/)
 
 <div align="center">
   <img src="./public/images/landing-head.png" alt="Page d'accueil InviteMoi" width="100%" />
