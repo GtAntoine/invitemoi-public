@@ -129,14 +129,33 @@ Ce repo documente mon travail sur ce produit :
 ## 📸 Aperçu de l'Application
 
 <div align="center">
-  <img src="./public/images/landing.png" alt="Landing page InviteMoi" width="100%" />
+  <img src="./public/images/v2-explorer.png" alt="Explorer : les sorties de la semaine, filtrées par rôle, date et catégorie" width="100%" />
   <br/>
-  <em>Landing page de l'application</em>
+  <em>Explorer : les sorties de la semaine, filtrées par rôle (Être invité·e / Inviter), par date et par catégorie</em>
   <br/><br/>
-  <img src="./public/images/events.png" alt="Page des événements" width="100%" />
+  <img src="./public/images/v2-sortie.png" alt="Fiche d'une sortie : l'annonce, le profil de l'hôte et les points communs" width="100%" />
   <br/>
-  <em>Interface de navigation et découverte des événements</em>
+  <em>Fiche d'une sortie : l'annonce, le profil de la personne et vos points communs, avant de répondre</em>
+  <br/><br/>
+  <img src="./public/images/v2-parcours.gif" alt="Parcours mobile : détacher le talon d'un billet, écrire un message, envoyer la demande" width="32%" />
+  <br/>
+  <em>Sur mobile : on détache le talon d'un billet, on écrit un mot, la demande part</em>
 </div>
+
+<details>
+<summary>Captures de la V1</summary>
+
+<div align="center">
+  <img src="./public/images/v1/landing.png" alt="Landing page de la V1" width="100%" />
+  <br/>
+  <em>Landing page de la V1</em>
+  <br/><br/>
+  <img src="./public/images/v1/events.png" alt="Page des événements de la V1" width="100%" />
+  <br/>
+  <em>Navigation et découverte des événements dans la V1</em>
+</div>
+
+</details>
 
 ---
 
@@ -243,20 +262,37 @@ Interface moderne avec :
 - **Dark mode** : Support natif avec transitions douces
 - **Framer Motion** : Animations performantes et élégantes
 
+> Le glassmorphism était l'identité de la V1. La V2 l'a remplacé par un fond crème, le corail et le safran des deux rôles, et des couvertures façon affiche ([06 - Refonte V2](./docs/06-refonte-v2.md)).
+
 <div align="center">
-  <img src="./public/images/mobile-menu-UX.gif" alt="Animation du menu mobile" width="45%" style="display: inline-block; margin: 10px;" />
-  <img src="./public/images/swipe.gif" alt="Animation du système de swipe" width="45%" style="display: inline-block; margin: 10px;" />
+  <img src="./public/images/v2-swipe.gif" alt="Tri des candidatures au swipe : passer, choisir, écran de match" width="32%" />
   <br/>
-  <em>Menu mobile avec animations fluides • Gestes swipe cachés à découvrir (hidden feature)</em>
+  <em>V2 : les candidatures arrivent en pile de cartes. À gauche on passe, à droite on choisit, et c'est un match.</em>
 </div>
 
 **Mode Sombre :**
 
 <div align="center">
-  <img src="./public/images/dark-mode.png" alt="Interface en mode sombre" width="100%" />
+  <img src="./public/images/v2-explorer-sombre.png" alt="Explorer en mode sombre" width="100%" />
   <br/>
-  <em>Interface complète en dark mode avec effets glassmorphism préservés</em>
+  <em>V2 : mode sombre complet, les couleurs des rôles et des affiches restent identiques</em>
 </div>
+
+<details>
+<summary>Captures de la V1 (glassmorphism)</summary>
+
+<div align="center">
+  <img src="./public/images/v1/mobile-menu-UX.gif" alt="Animation du menu mobile de la V1" width="45%" style="display: inline-block; margin: 10px;" />
+  <img src="./public/images/v1/swipe.gif" alt="Animation du swipe de la V1" width="45%" style="display: inline-block; margin: 10px;" />
+  <br/>
+  <em>V1 : menu mobile animé • gestes swipe cachés à découvrir</em>
+  <br/><br/>
+  <img src="./public/images/v1/dark-mode.png" alt="Interface de la V1 en mode sombre" width="100%" />
+  <br/>
+  <em>V1 : dark mode avec effets glassmorphism</em>
+</div>
+
+</details>
 
 **Objectif :**
 - Se démarquer des interfaces plates et ennuyeuses
