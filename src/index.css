@@ -74,6 +74,55 @@
   }
 }
 
+@layer base {
+  ::selection {
+    background: rgb(var(--saffron) / 0.55);
+    color: rgb(var(--ink));
+  }
+}
+
+/* Billets de l'accueil : encoches en demi-lune de part et d'autre de la perforation. */
+@layer components {
+  .ticket-main,
+  .ticket-stub {
+    --notch: 14px;
+  }
+  .ticket-main {
+    mask:
+      radial-gradient(circle at 0 100%, #0000 var(--notch), #000 calc(var(--notch) + 0.5px)) left / 51% 100% no-repeat,
+      radial-gradient(circle at 100% 100%, #0000 var(--notch), #000 calc(var(--notch) + 0.5px)) right / 51% 100% no-repeat;
+  }
+  .ticket-stub {
+    mask:
+      radial-gradient(circle at 0 0, #0000 var(--notch), #000 calc(var(--notch) + 0.5px)) left / 51% 100% no-repeat,
+      radial-gradient(circle at 100% 0, #0000 var(--notch), #000 calc(var(--notch) + 0.5px)) right / 51% 100% no-repeat;
+  }
+  /* Perforation : une ligne de trous, pas une bordure. */
+  .ticket-perf {
+    background-image: radial-gradient(circle, rgb(var(--bg)) 2.2px, transparent 2.6px);
+    background-size: 12px 6px;
+    background-repeat: repeat-x;
+    background-position: 0 50%;
+  }
+  @media (min-width: 768px) {
+    .ticket-main {
+      mask:
+        radial-gradient(circle at 100% 0, #0000 var(--notch), #000 calc(var(--notch) + 0.5px)) top / 100% 51% no-repeat,
+        radial-gradient(circle at 100% 100%, #0000 var(--notch), #000 calc(var(--notch) + 0.5px)) bottom / 100% 51% no-repeat;
+    }
+    .ticket-stub {
+      mask:
+        radial-gradient(circle at 0 0, #0000 var(--notch), #000 calc(var(--notch) + 0.5px)) top / 100% 51% no-repeat,
+        radial-gradient(circle at 0 100%, #0000 var(--notch), #000 calc(var(--notch) + 0.5px)) bottom / 100% 51% no-repeat;
+    }
+    .ticket-perf {
+      background-size: 6px 12px;
+      background-repeat: repeat-y;
+      background-position: 50% 0;
+    }
+  }
+}
+
 @layer utilities {
   .no-scrollbar {
     scrollbar-width: none;

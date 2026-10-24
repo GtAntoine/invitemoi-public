@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, CalendarDays, Instagram, MapPin, Navigation, Share2, Star, Trash2, Users } from 'lucide-react';
 import { KINDS } from '../lib/catalog';
 import { dayLabel, plural, timeLabel } from '../lib/format';
@@ -17,7 +17,9 @@ export function OutingDetailPage() {
   const navigate = useNavigate();
   const toast = useToast();
   const { outing: find, user, me, applicationsFor, myApplicationTo, withdraw, deleteOuting } = useDemo();
-  const [applyOpen, setApplyOpen] = useState(false);
+  // L'accueil ouvre directement la feuille de message quand on détache un talon.
+  const { state: navState } = useLocation();
+  const [applyOpen, setApplyOpen] = useState(() => Boolean((navState as { apply?: boolean } | null)?.apply));
   const [confirm, setConfirm] = useState<'withdraw' | 'delete' | null>(null);
 
   const outing = find(id);

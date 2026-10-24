@@ -66,6 +66,16 @@ Le glassmorphism bleu/violet de la V1 a laissé place à une direction plus chau
 - **Couvertures** : chaque catégorie a sa couleur d'affiche et son pictogramme géant, avec un tampon de date. Pas de photos à charger, rendu identique hors ligne.
 - **Mode sombre** complet, piloté par des variables CSS (clair, sombre ou auto dans les réglages).
 - **Mouvement** : transitions courtes, ressorts sur les validations, respect de `prefers-reduced-motion`.
+- **Logo** : le logo d'origine (deux tickets et un cœur) est gardé tel quel, recolorié du dégradé bleu/violet vers un dégradé safran → corail, les deux couleurs des rôles.
+
+### L'accueil : la paire de tickets
+
+La première version de l'accueil V2 reprenait le gabarit de landing qu'on voit partout (pastille au-dessus d'un titre géant à la fin soulignée, étapes « 01 02 03 », bandeau sombre final). Elle a été refaite avec le skill [impeccable](https://github.com/pbakaus/impeccable), autour de l'objet du logo :
+
+- Le premier écran montre deux billets à talon, un corail « J'invite » et un safran « Invite-moi ». Chacun porte une vraie annonce de la démo.
+- **Détacher le talon** (le tirer de côté, ou cliquer) fait entrer dans l'app, sur cette sortie, avec la feuille de réponse déjà ouverte.
+- « À l'affiche cette semaine » fait défiler le reste du programme sous forme de petits billets.
+- « Au dos du billet » donne les règles du jeu au dos d'un billet, avec le bouton pour lancer la démo sur le talon.
 
 ---
 
