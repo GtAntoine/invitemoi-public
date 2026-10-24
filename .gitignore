@@ -6,3 +6,6 @@ dist
 .impeccable/review/
 .impeccable/questions/
 .impeccable/config.local.json
+
+# Netlify : état local du lien au site
+.netlify
