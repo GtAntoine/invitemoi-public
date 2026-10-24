@@ -1,0 +1,904 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-24T17:33:39+00:00",
+  "title": "Design System: Invite Moi",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Crème de guichet",
+        "canonical": "rgb(250 246 240)",
+        "oklch": "oklch(97.5% 0.009 78.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.002 78.3)",
+          "oklch(27.0% 0.004 78.3)",
+          "oklch(39.0% 0.006 78.3)",
+          "oklch(51.0% 0.008 78.3)",
+          "oklch(63.0% 0.009 78.3)",
+          "oklch(75.0% 0.007 78.3)",
+          "oklch(86.0% 0.005 78.3)",
+          "oklch(95.0% 0.003 78.3)"
+        ],
+        "cssVar": "--bg",
+        "darkValue": "rgb(20 17 14)"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Blanc carte",
+        "canonical": "rgb(255 255 255)",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(27.0% 0.000 89.9)",
+          "oklch(39.0% 0.000 89.9)",
+          "oklch(51.0% 0.000 89.9)",
+          "oklch(63.0% 0.000 89.9)",
+          "oklch(75.0% 0.000 89.9)",
+          "oklch(86.0% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ],
+        "cssVar": "--surface",
+        "darkValue": "rgb(30 26 22)"
+      },
+      "sunken": {
+        "role": "neutral",
+        "displayName": "Sable creux",
+        "canonical": "rgb(243 237 228)",
+        "oklch": "oklch(94.8% 0.014 78.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.002 78.3)",
+          "oklch(27.0% 0.005 78.3)",
+          "oklch(39.0% 0.008 78.3)",
+          "oklch(51.0% 0.011 78.3)",
+          "oklch(63.0% 0.013 78.3)",
+          "oklch(75.0% 0.010 78.3)",
+          "oklch(86.0% 0.007 78.3)",
+          "oklch(95.0% 0.005 78.3)"
+        ],
+        "cssVar": "--sunken",
+        "darkValue": "rgb(39 34 29)"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Encre chaude",
+        "canonical": "rgb(26 23 20)",
+        "oklch": "oklch(20.7% 0.008 67.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.001 67.4)",
+          "oklch(27.0% 0.003 67.4)",
+          "oklch(39.0% 0.005 67.4)",
+          "oklch(51.0% 0.006 67.4)",
+          "oklch(63.0% 0.007 67.4)",
+          "oklch(75.0% 0.005 67.4)",
+          "oklch(86.0% 0.004 67.4)",
+          "oklch(95.0% 0.003 67.4)"
+        ],
+        "cssVar": "--ink",
+        "darkValue": "rgb(244 238 230)"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Encre passée",
+        "canonical": "rgb(107 99 90)",
+        "oklch": "oklch(50.4% 0.017 70.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 70.7)",
+          "oklch(27.0% 0.007 70.7)",
+          "oklch(39.0% 0.011 70.7)",
+          "oklch(51.0% 0.014 70.7)",
+          "oklch(63.0% 0.016 70.7)",
+          "oklch(75.0% 0.013 70.7)",
+          "oklch(86.0% 0.009 70.7)",
+          "oklch(95.0% 0.006 70.7)"
+        ],
+        "cssVar": "--muted",
+        "darkValue": "rgb(163 154 143)"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Filet beige",
+        "canonical": "rgb(231 222 210)",
+        "oklch": "oklch(90.4% 0.019 75.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 75.3)",
+          "oklch(27.0% 0.008 75.3)",
+          "oklch(39.0% 0.012 75.3)",
+          "oklch(51.0% 0.016 75.3)",
+          "oklch(63.0% 0.018 75.3)",
+          "oklch(75.0% 0.014 75.3)",
+          "oklch(86.0% 0.010 75.3)",
+          "oklch(95.0% 0.007 75.3)"
+        ],
+        "cssVar": "--line",
+        "darkValue": "rgb(54 47 40)"
+      },
+      "shadow-tint": {
+        "role": "neutral",
+        "displayName": "Teinte d'ombre",
+        "canonical": "rgb(60 40 20)",
+        "oklch": "oklch(29.6% 0.044 64.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.008 64.7)",
+          "oklch(27.0% 0.018 64.7)",
+          "oklch(39.0% 0.027 64.7)",
+          "oklch(51.0% 0.037 64.7)",
+          "oklch(63.0% 0.041 64.7)",
+          "oklch(75.0% 0.032 64.7)",
+          "oklch(86.0% 0.023 64.7)",
+          "oklch(95.0% 0.016 64.7)"
+        ],
+        "cssVar": "--shadow",
+        "darkValue": "rgb(0 0 0)"
+      },
+      "coral": {
+        "role": "primary",
+        "displayName": "Corail « J'invite »",
+        "canonical": "rgb(214 63 34)",
+        "oklch": "oklch(58.6% 0.192 32.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.035 32.9)",
+          "oklch(27.0% 0.077 32.9)",
+          "oklch(39.0% 0.119 32.9)",
+          "oklch(51.0% 0.161 32.9)",
+          "oklch(63.0% 0.182 32.9)",
+          "oklch(75.0% 0.140 32.9)",
+          "oklch(86.0% 0.101 32.9)",
+          "oklch(95.0% 0.070 32.9)"
+        ],
+        "cssVar": "--coral",
+        "darkValue": "rgb(226 74 44)"
+      },
+      "coral-soft": {
+        "role": "primary",
+        "displayName": "Corail doux",
+        "canonical": "rgb(252 228 220)",
+        "oklch": "oklch(93.6% 0.029 39.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.005 39.3)",
+          "oklch(27.0% 0.011 39.3)",
+          "oklch(39.0% 0.018 39.3)",
+          "oklch(51.0% 0.024 39.3)",
+          "oklch(63.0% 0.027 39.3)",
+          "oklch(75.0% 0.021 39.3)",
+          "oklch(86.0% 0.015 39.3)",
+          "oklch(95.0% 0.010 39.3)"
+        ],
+        "cssVar": "--coral-soft",
+        "darkValue": "rgb(66 30 22)"
+      },
+      "coral-ink": {
+        "role": "primary",
+        "displayName": "Encre corail",
+        "canonical": "rgb(150 40 18)",
+        "oklch": "oklch(44.9% 0.149 33.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.027 33.0)",
+          "oklch(27.0% 0.060 33.0)",
+          "oklch(39.0% 0.092 33.0)",
+          "oklch(51.0% 0.125 33.0)",
+          "oklch(63.0% 0.141 33.0)",
+          "oklch(75.0% 0.109 33.0)",
+          "oklch(86.0% 0.079 33.0)",
+          "oklch(95.0% 0.054 33.0)"
+        ],
+        "cssVar": "--coral-ink",
+        "darkValue": "rgb(255 160 135)"
+      },
+      "saffron": {
+        "role": "secondary",
+        "displayName": "Safran « Invite-moi »",
+        "canonical": "rgb(246 182 52)",
+        "oklch": "oklch(81.5% 0.154 80.2)",
+        "tonalRamp": [
+          "oklch(15.0% 0.028 80.2)",
+          "oklch(27.0% 0.062 80.2)",
+          "oklch(39.0% 0.095 80.2)",
+          "oklch(51.0% 0.129 80.2)",
+          "oklch(63.0% 0.146 80.2)",
+          "oklch(75.0% 0.112 80.2)",
+          "oklch(86.0% 0.081 80.2)",
+          "oklch(95.0% 0.056 80.2)"
+        ],
+        "cssVar": "--saffron",
+        "darkValue": "rgb(246 182 52)"
+      },
+      "saffron-soft": {
+        "role": "secondary",
+        "displayName": "Safran doux",
+        "canonical": "rgb(253 240 205)",
+        "oklch": "oklch(95.7% 0.048 90.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.009 90.1)",
+          "oklch(27.0% 0.019 90.1)",
+          "oklch(39.0% 0.029 90.1)",
+          "oklch(51.0% 0.040 90.1)",
+          "oklch(63.0% 0.045 90.1)",
+          "oklch(75.0% 0.035 90.1)",
+          "oklch(86.0% 0.025 90.1)",
+          "oklch(95.0% 0.017 90.1)"
+        ],
+        "cssVar": "--saffron-soft",
+        "darkValue": "rgb(60 45 14)"
+      },
+      "saffron-ink": {
+        "role": "secondary",
+        "displayName": "Encre safran",
+        "canonical": "rgb(122 82 0)",
+        "oklch": "oklch(47.1% 0.099 76.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.018 76.3)",
+          "oklch(27.0% 0.039 76.3)",
+          "oklch(39.0% 0.061 76.3)",
+          "oklch(51.0% 0.083 76.3)",
+          "oklch(63.0% 0.093 76.3)",
+          "oklch(75.0% 0.072 76.3)",
+          "oklch(86.0% 0.052 76.3)",
+          "oklch(95.0% 0.036 76.3)"
+        ],
+        "cssVar": "--saffron-ink",
+        "darkValue": "rgb(250 205 110)"
+      },
+      "success": {
+        "role": "tertiary",
+        "displayName": "Vert match",
+        "canonical": "rgb(31 138 91)",
+        "oklch": "oklch(56.3% 0.119 158.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.022 158.9)",
+          "oklch(27.0% 0.048 158.9)",
+          "oklch(39.0% 0.074 158.9)",
+          "oklch(51.0% 0.100 158.9)",
+          "oklch(63.0% 0.113 158.9)",
+          "oklch(75.0% 0.087 158.9)",
+          "oklch(86.0% 0.063 158.9)",
+          "oklch(95.0% 0.043 158.9)"
+        ],
+        "cssVar": "--success",
+        "darkValue": "rgb(74 196 136)"
+      },
+      "success-soft": {
+        "role": "tertiary",
+        "displayName": "Vert match doux",
+        "canonical": "rgb(218 242 229)",
+        "oklch": "oklch(94.0% 0.031 162.2)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 162.2)",
+          "oklch(27.0% 0.012 162.2)",
+          "oklch(39.0% 0.019 162.2)",
+          "oklch(51.0% 0.026 162.2)",
+          "oklch(63.0% 0.029 162.2)",
+          "oklch(75.0% 0.022 162.2)",
+          "oklch(86.0% 0.016 162.2)",
+          "oklch(95.0% 0.011 162.2)"
+        ],
+        "cssVar": "--success-soft",
+        "darkValue": "rgb(22 52 38)"
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Rouge danger",
+        "canonical": "rgb(201 58 58)",
+        "oklch": "oklch(56.2% 0.180 25.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.033 25.1)",
+          "oklch(27.0% 0.072 25.1)",
+          "oklch(39.0% 0.111 25.1)",
+          "oklch(51.0% 0.151 25.1)",
+          "oklch(63.0% 0.170 25.1)",
+          "oklch(75.0% 0.131 25.1)",
+          "oklch(86.0% 0.095 25.1)",
+          "oklch(95.0% 0.065 25.1)"
+        ],
+        "cssVar": "--danger",
+        "darkValue": "rgb(240 100 100)"
+      },
+      "danger-soft": {
+        "role": "tertiary",
+        "displayName": "Rouge danger doux",
+        "canonical": "rgb(250 225 225)",
+        "oklch": "oklch(93.0% 0.028 17.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.005 17.7)",
+          "oklch(27.0% 0.011 17.7)",
+          "oklch(39.0% 0.017 17.7)",
+          "oklch(51.0% 0.023 17.7)",
+          "oklch(63.0% 0.026 17.7)",
+          "oklch(75.0% 0.020 17.7)",
+          "oklch(86.0% 0.015 17.7)",
+          "oklch(95.0% 0.010 17.7)"
+        ],
+        "cssVar": "--danger-soft",
+        "darkValue": "rgb(64 26 26)"
+      },
+      "coral-paper": {
+        "role": "primary",
+        "displayName": "Papier corail",
+        "canonical": "#D63F22",
+        "oklch": "oklch(58.6% 0.192 32.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.035 32.9)",
+          "oklch(27.0% 0.077 32.9)",
+          "oklch(39.0% 0.119 32.9)",
+          "oklch(51.0% 0.161 32.9)",
+          "oklch(63.0% 0.182 32.9)",
+          "oklch(75.0% 0.140 32.9)",
+          "oklch(86.0% 0.101 32.9)",
+          "oklch(95.0% 0.070 32.9)"
+        ],
+        "themeInvariant": true
+      },
+      "coral-paper-pressed": {
+        "role": "primary",
+        "displayName": "Papier corail appuyé",
+        "canonical": "#C2381E",
+        "oklch": "oklch(54.5% 0.179 32.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.033 32.7)",
+          "oklch(27.0% 0.072 32.7)",
+          "oklch(39.0% 0.111 32.7)",
+          "oklch(51.0% 0.150 32.7)",
+          "oklch(63.0% 0.169 32.7)",
+          "oklch(75.0% 0.130 32.7)",
+          "oklch(86.0% 0.094 32.7)",
+          "oklch(95.0% 0.065 32.7)"
+        ],
+        "themeInvariant": true
+      },
+      "saffron-paper": {
+        "role": "secondary",
+        "displayName": "Papier safran",
+        "canonical": "#F6B634",
+        "oklch": "oklch(81.5% 0.154 80.2)",
+        "tonalRamp": [
+          "oklch(15.0% 0.028 80.2)",
+          "oklch(27.0% 0.062 80.2)",
+          "oklch(39.0% 0.095 80.2)",
+          "oklch(51.0% 0.129 80.2)",
+          "oklch(63.0% 0.146 80.2)",
+          "oklch(75.0% 0.112 80.2)",
+          "oklch(86.0% 0.081 80.2)",
+          "oklch(95.0% 0.056 80.2)"
+        ],
+        "themeInvariant": true
+      },
+      "saffron-paper-pressed": {
+        "role": "secondary",
+        "displayName": "Papier safran appuyé",
+        "canonical": "#EEAA22",
+        "oklch": "oklch(78.3% 0.156 78.2)",
+        "tonalRamp": [
+          "oklch(15.0% 0.028 78.2)",
+          "oklch(27.0% 0.062 78.2)",
+          "oklch(39.0% 0.096 78.2)",
+          "oklch(51.0% 0.130 78.2)",
+          "oklch(63.0% 0.147 78.2)",
+          "oklch(75.0% 0.113 78.2)",
+          "oklch(86.0% 0.082 78.2)",
+          "oklch(95.0% 0.057 78.2)"
+        ],
+        "themeInvariant": true
+      },
+      "on-coral": {
+        "role": "primary",
+        "displayName": "Encre blanche sur corail",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(27.0% 0.000 89.9)",
+          "oklch(39.0% 0.000 89.9)",
+          "oklch(51.0% 0.000 89.9)",
+          "oklch(63.0% 0.000 89.9)",
+          "oklch(75.0% 0.000 89.9)",
+          "oklch(86.0% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ],
+        "themeInvariant": true
+      },
+      "on-saffron": {
+        "role": "secondary",
+        "displayName": "Encre brune sur safran",
+        "canonical": "#2A1F00",
+        "oklch": "oklch(24.6% 0.050 89.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.009 89.5)",
+          "oklch(27.0% 0.020 89.5)",
+          "oklch(39.0% 0.031 89.5)",
+          "oklch(51.0% 0.042 89.5)",
+          "oklch(63.0% 0.047 89.5)",
+          "oklch(75.0% 0.036 89.5)",
+          "oklch(86.0% 0.026 89.5)",
+          "oklch(95.0% 0.018 89.5)"
+        ],
+        "themeInvariant": true
+      },
+      "poster-cream": {
+        "role": "neutral",
+        "displayName": "Crème d'affiche",
+        "canonical": "#FBF4EA",
+        "oklch": "oklch(97.0% 0.015 77.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 77.1)",
+          "oklch(27.0% 0.006 77.1)",
+          "oklch(39.0% 0.009 77.1)",
+          "oklch(51.0% 0.013 77.1)",
+          "oklch(63.0% 0.014 77.1)",
+          "oklch(75.0% 0.011 77.1)",
+          "oklch(86.0% 0.008 77.1)",
+          "oklch(95.0% 0.006 77.1)"
+        ],
+        "themeInvariant": true
+      },
+      "poster-resto": {
+        "role": "tertiary",
+        "displayName": "Affiche Resto",
+        "canonical": "#C2461F",
+        "oklch": "oklch(56.0% 0.167 37.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.030 37.0)",
+          "oklch(27.0% 0.067 37.0)",
+          "oklch(39.0% 0.103 37.0)",
+          "oklch(51.0% 0.139 37.0)",
+          "oklch(63.0% 0.158 37.0)",
+          "oklch(75.0% 0.121 37.0)",
+          "oklch(86.0% 0.088 37.0)",
+          "oklch(95.0% 0.061 37.0)"
+        ],
+        "themeInvariant": true
+      },
+      "poster-theatre": {
+        "role": "tertiary",
+        "displayName": "Affiche Théâtre",
+        "canonical": "#7A2E3B",
+        "oklch": "oklch(41.4% 0.106 12.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.019 12.6)",
+          "oklch(27.0% 0.043 12.6)",
+          "oklch(39.0% 0.066 12.6)",
+          "oklch(51.0% 0.089 12.6)",
+          "oklch(63.0% 0.101 12.6)",
+          "oklch(75.0% 0.077 12.6)",
+          "oklch(86.0% 0.056 12.6)",
+          "oklch(95.0% 0.039 12.6)"
+        ],
+        "themeInvariant": true
+      },
+      "poster-expo": {
+        "role": "tertiary",
+        "displayName": "Affiche Expo",
+        "canonical": "#2F5D50",
+        "oklch": "oklch(44.1% 0.056 173.2)",
+        "tonalRamp": [
+          "oklch(15.0% 0.010 173.2)",
+          "oklch(27.0% 0.022 173.2)",
+          "oklch(39.0% 0.034 173.2)",
+          "oklch(51.0% 0.046 173.2)",
+          "oklch(63.0% 0.053 173.2)",
+          "oklch(75.0% 0.040 173.2)",
+          "oklch(86.0% 0.029 173.2)",
+          "oklch(95.0% 0.020 173.2)"
+        ],
+        "themeInvariant": true
+      },
+      "poster-cine": {
+        "role": "tertiary",
+        "displayName": "Affiche Ciné",
+        "canonical": "#24304F",
+        "oklch": "oklch(31.4% 0.058 267.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 267.0)",
+          "oklch(27.0% 0.023 267.0)",
+          "oklch(39.0% 0.036 267.0)",
+          "oklch(51.0% 0.049 267.0)",
+          "oklch(63.0% 0.055 267.0)",
+          "oklch(75.0% 0.042 267.0)",
+          "oklch(86.0% 0.031 267.0)",
+          "oklch(95.0% 0.021 267.0)"
+        ],
+        "themeInvariant": true
+      },
+      "poster-concert": {
+        "role": "tertiary",
+        "displayName": "Affiche Concert",
+        "canonical": "#5B3FB8",
+        "oklch": "oklch(47.0% 0.181 288.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.033 288.0)",
+          "oklch(27.0% 0.072 288.0)",
+          "oklch(39.0% 0.112 288.0)",
+          "oklch(51.0% 0.151 288.0)",
+          "oklch(63.0% 0.171 288.0)",
+          "oklch(75.0% 0.132 288.0)",
+          "oklch(86.0% 0.095 288.0)",
+          "oklch(95.0% 0.066 288.0)"
+        ],
+        "themeInvariant": true
+      },
+      "poster-autre": {
+        "role": "tertiary",
+        "displayName": "Affiche Autre",
+        "canonical": "#9A6A12",
+        "oklch": "oklch(56.1% 0.112 75.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.020 75.8)",
+          "oklch(27.0% 0.045 75.8)",
+          "oklch(39.0% 0.069 75.8)",
+          "oklch(51.0% 0.094 75.8)",
+          "oklch(63.0% 0.106 75.8)",
+          "oklch(75.0% 0.082 75.8)",
+          "oklch(86.0% 0.059 75.8)",
+          "oklch(95.0% 0.041 75.8)"
+        ],
+        "themeInvariant": true
+      },
+      "avatar-plum": {
+        "role": "tertiary",
+        "displayName": "Avatar prune",
+        "canonical": "#8A3F6E",
+        "oklch": "oklch(48.1% 0.118 344.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.021 344.0)",
+          "oklch(27.0% 0.047 344.0)",
+          "oklch(39.0% 0.073 344.0)",
+          "oklch(51.0% 0.098 344.0)",
+          "oklch(63.0% 0.111 344.0)",
+          "oklch(75.0% 0.086 344.0)",
+          "oklch(86.0% 0.062 344.0)",
+          "oklch(95.0% 0.043 344.0)"
+        ],
+        "themeInvariant": true
+      },
+      "avatar-slate": {
+        "role": "tertiary",
+        "displayName": "Avatar ardoise",
+        "canonical": "#3E6A8A",
+        "oklch": "oklch(50.6% 0.071 241.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.013 241.6)",
+          "oklch(27.0% 0.028 241.6)",
+          "oklch(39.0% 0.044 241.6)",
+          "oklch(51.0% 0.059 241.6)",
+          "oklch(63.0% 0.067 241.6)",
+          "oklch(75.0% 0.051 241.6)",
+          "oklch(86.0% 0.037 241.6)",
+          "oklch(95.0% 0.026 241.6)"
+        ],
+        "themeInvariant": true
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Le slogan de l'accueil ; 34px mobile, 48px dès 640px, 52px dès 1024px."
+      },
+      "headline-lg": {
+        "displayName": "Headline (grand)",
+        "purpose": "Titres de page dès 768px et titres de section de l'accueil."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titres de page sur mobile et dans le parcours de création."
+      },
+      "ticket-title": {
+        "displayName": "Titre de billet",
+        "purpose": "Titre de la sortie sur un billet ; 26px, 32px dès 640px, 38px dès 1024px."
+      },
+      "stub-action": {
+        "displayName": "Action de talon",
+        "purpose": "L'action imprimée sur le talon et l'accroche du revers ; 20px sur mobile."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Titres de groupe (SectionTitle) ; 18px pour les titres de feuille."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Titres des cartes d'annonce."
+      },
+      "logotype": {
+        "displayName": "Logotype",
+        "purpose": "« invitemoi », la syllabe « moi » en corail."
+      },
+      "body-lead": {
+        "displayName": "Chapeau",
+        "purpose": "Paragraphe d'introduction sous le slogan, en muted."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texte de contenu, méta-données des billets."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "La taille la plus fréquente : méta-données, puces, appoint."
+      },
+      "button": {
+        "displayName": "Bouton",
+        "purpose": "Texte des boutons moyens ; 14px en petit, 16px en grand."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Libellés de groupe en capitales dans l'app."
+      },
+      "label-badge": {
+        "displayName": "Label Badge",
+        "purpose": "Badges de rôle et compteurs."
+      },
+      "label-control": {
+        "displayName": "Ligne de contrôle",
+        "purpose": "Rôle, catégorie et numéro de série imprimés sur un billet."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card",
+        "value": "0 1px 2px rgb(var(--shadow) / 0.06), 0 8px 24px -12px rgb(var(--shadow) / 0.18)",
+        "purpose": "Cartes d'annonce, lignes de liste, talons du rail, pastille du sélecteur segmenté."
+      },
+      {
+        "name": "lift",
+        "value": "0 2px 4px rgb(var(--shadow) / 0.08), 0 24px 48px -16px rgb(var(--shadow) / 0.28)",
+        "purpose": "Feuilles et toasts."
+      },
+      {
+        "name": "ticket",
+        "value": "drop-shadow(0 18px 28px rgb(var(--shadow) / 0.22))",
+        "purpose": "Filtre sur le conteneur d'un billet de couleur (le masque couperait un box-shadow)."
+      },
+      {
+        "name": "ticket-back",
+        "value": "drop-shadow(0 14px 24px rgb(var(--shadow) / 0.14))",
+        "purpose": "Filtre sur le revers blanc du billet."
+      },
+      {
+        "name": "coral-glow",
+        "value": "0 6px 16px -6px rgb(var(--coral) / 0.6)",
+        "purpose": "Lueur du bouton principal."
+      },
+      {
+        "name": "coral-glow-fab",
+        "value": "0 10px 24px -8px rgb(var(--coral) / 0.8)",
+        "purpose": "Lueur du bouton flottant « Créer » (mobile)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-tear",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Envol du talon détaché (0.5s, rotation 14°, fondu) ; ease-out exponentiel."
+      },
+      {
+        "name": "tear-distance",
+        "value": "64px",
+        "purpose": "Glissement horizontal au-delà duquel le talon part ; élasticité 0.35."
+      },
+      {
+        "name": "stub-hover",
+        "value": "rotate(-1.5deg) translateX(4px)",
+        "purpose": "Le talon se soulève au survol (désactivé en mouvement réduit)."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97) / 150ms",
+        "purpose": "Enfoncement des boutons à l'appui."
+      },
+      {
+        "name": "page-enter",
+        "value": "opacity 0→1, translateY 8px→0, 220ms ease-out",
+        "purpose": "Entrée de chaque page de l'app."
+      },
+      {
+        "name": "card-hover",
+        "value": "translateY(-2px) / 200ms",
+        "purpose": "Carte d'annonce au survol ; -4px pour les talons du rail."
+      },
+      {
+        "name": "spring-sheet",
+        "value": "spring damping 32, stiffness 340",
+        "purpose": "Montée et descente des feuilles."
+      },
+      {
+        "name": "spring-pill",
+        "value": "spring damping 30, stiffness 400",
+        "purpose": "Pastille du sélecteur segmenté et trait d'onglet actif (layoutId)."
+      },
+      {
+        "name": "swipe-out",
+        "value": "translateX ±640px, 280ms ease-in",
+        "purpose": "Sortie d'une carte triée dans la pile."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Coupe le glisser et l'envol du talon : le clic ouvre directement."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px",
+        "note": "Charnière principale : navigation desktop, billets à talon à droite, perforation verticale."
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ],
+    "ticketGeometry": {
+      "notchRadius": "14px",
+      "cornerRadius": "22px",
+      "perforation": "trous radial-gradient 2.2px (bord 2.6px), pas 12px × 6px ; couleur --bg sur papier coloré, --muted / 0.85 sur papier blanc (.ticket-perf-ink)",
+      "stubWidth": "176px dès 768px, 208px dès 1024px ; pleine largeur dessous en mobile",
+      "pairOffset": "dès 768px : max 820px, -1.2deg et +1deg, second billet aligné à droite et remonté de 12px",
+      "serial": "serial(id) : quatre chiffres stables, préfixés « N° »",
+      "classes": [
+        ".ticket-main",
+        ".ticket-stub",
+        ".ticket-perf",
+        ".ticket-perf-ink"
+      ],
+      "source": "src/index.css, src/components/Ticket.tsx"
+    },
+    "drift": [
+      "Papiers et encres fixes écrits en hexadécimal dans les composants (Ticket.tsx, Landing.tsx, primitives.tsx) plutôt qu'en variables CSS ; #D63F22 et #F6B634 dupliquent --coral et --saffron du thème clair.",
+      "Trois encres brunes presque identiques sur safran : #2A1F00 (billet, rail), #3D2D00 (texte secondaire du billet), #3A2A00 (KindBadge).",
+      "Littéraux qui dupliquent des variables : #FBF4EA (proche de --bg #FAF6F0), #1A1714 et #6B635A (= --ink et --muted clairs) dans le tampon de date, #14110E (= --bg sombre) pour le voile des feuilles.",
+      "Le rayon « 4xl » (2rem) déclaré dans tailwind.config.js n'est utilisé nulle part ; les feuilles et panneaux utilisent un 28px arbitraire (14 occurrences).",
+      "Trois interlettrages pour les petites capitales : 0.025em (KindBadge), 0.05em (libellés de l'app), 0.14em (billets) ; plus un 10px isolé dans le tampon de date.",
+      "En sombre, --coral (226 74 44) donne 4.0:1 avec le blanc : le bouton principal le contourne avec #D63F22, mais les pastilles de compteur (11px blanc sur bg-coral) restent sous 4.5:1.",
+      "Deux lueurs corail ad hoc (bouton principal, bouton flottant) et deux ombres de billet hors de l'échelle boxShadow de tailwind.config.js.",
+      "« Ton {role} » (ManageOuting) est un libellé en capitales posé au-dessus du contenu, à la manière d'un surtitre ; non canonisé."
+    ]
+  },
+  "components": [
+    {
+      "name": "Bouton principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "L'action principale d'un écran, en corail ; en sombre, le fond passe à coral-paper (#D63F22).",
+      "html": "<button class=\"ds-btn-primary\">Lancer la démo <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border-radius: 9999px; font-family: \"Inter Variable\", system-ui, sans-serif; font-size: 15px; font-weight: 600; border: 0; cursor: pointer; transition: transform 150ms, filter 150ms, background-color 150ms, opacity 150ms; background: rgb(var(--coral, 214 63 34)); color: #fff; box-shadow: 0 6px 16px -6px rgb(var(--coral, 214 63 34) / 0.6); } .ds-btn-primary:hover { filter: brightness(1.1); } .ds-btn-primary:active { filter: brightness(0.95); transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 2px rgb(var(--bg, 250 246 240)), 0 0 0 4px rgb(var(--coral, 214 63 34)); } .dark .ds-btn-primary { background: #D63F22; }"
+    },
+    {
+      "name": "Bouton encre",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Action neutre et forte, inversée encre sur crème (en-tête de l'accueil).",
+      "html": "<button class=\"ds-btn-ink\">Lancer la démo <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-ink { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border-radius: 9999px; font-family: \"Inter Variable\", system-ui, sans-serif; font-size: 15px; font-weight: 600; border: 0; cursor: pointer; transition: transform 150ms, filter 150ms, background-color 150ms, opacity 150ms; height: 36px; padding: 0 14px; font-size: 14px; gap: 6px; background: rgb(var(--ink, 26 23 20)); color: rgb(var(--bg, 250 246 240)); } .ds-btn-ink:hover { opacity: 0.9; } .ds-btn-ink:active { transform: scale(0.97); } .ds-btn-ink:focus-visible { outline: none; box-shadow: 0 0 0 2px rgb(var(--bg, 250 246 240)), 0 0 0 4px rgb(var(--coral, 214 63 34)); }"
+    },
+    {
+      "name": "Bouton secondaire",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Action d'appoint : blanc carte, filet beige, survol sable.",
+      "html": "<button class=\"ds-btn-secondary\">Tout le programme</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border-radius: 9999px; font-family: \"Inter Variable\", system-ui, sans-serif; font-size: 15px; font-weight: 600; border: 0; cursor: pointer; transition: transform 150ms, filter 150ms, background-color 150ms, opacity 150ms; background: rgb(var(--surface, 255 255 255)); color: rgb(var(--ink, 26 23 20)); border: 1px solid rgb(var(--line, 231 222 210)); } .ds-btn-secondary:hover { background: rgb(var(--sunken, 243 237 228)); } .ds-btn-secondary:active { transform: scale(0.97); } .ds-btn-secondary:focus-visible { outline: none; box-shadow: 0 0 0 2px rgb(var(--bg, 250 246 240)), 0 0 0 4px rgb(var(--coral, 214 63 34)); }"
+    },
+    {
+      "name": "Champ texte",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Champ de formulaire : filet beige qui passe à l'encre au focus.",
+      "html": "<input class=\"ds-input\" placeholder=\"Nom du lieu, adresse…\" />",
+      "css": ".ds-input { width: 100%; max-width: 360px; border-radius: 16px; border: 1px solid rgb(var(--line, 231 222 210)); background: rgb(var(--surface, 255 255 255)); color: rgb(var(--ink, 26 23 20)); padding: 14px 16px; font-family: \"Inter Variable\", system-ui, sans-serif; font-size: 15px; } .ds-input::placeholder { color: rgb(var(--muted, 107 99 90)); } .ds-input:focus { outline: none; border-color: rgb(var(--ink, 26 23 20)); } .ds-input:focus-visible { border-color: rgb(var(--ink, 26 23 20)); outline: none; box-shadow: 0 0 0 2px rgb(var(--bg, 250 246 240)), 0 0 0 4px rgb(var(--coral, 214 63 34)); }"
+    },
+    {
+      "name": "Puces de filtre",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Filtres en pastilles ; la puce active s'inverse en encre.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"true\">Toute la semaine</button><button class=\"ds-chip\" aria-pressed=\"false\">Ven. 21</button><button class=\"ds-chip\" aria-pressed=\"false\">Sam. 22</button></div>",
+      "css": ".ds-chips { display: flex; gap: 8px; } .ds-chip { display: inline-flex; align-items: center; height: 36px; padding: 0 14px; border-radius: 9999px; border: 1px solid rgb(var(--line, 231 222 210)); background: rgb(var(--surface, 255 255 255)); color: rgb(var(--ink, 26 23 20)); font-family: \"Inter Variable\", system-ui, sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: background-color 150ms; } .ds-chip:hover { background: rgb(var(--sunken, 243 237 228)); } .ds-chip[aria-pressed=\"true\"] { background: rgb(var(--ink, 26 23 20)); border-color: rgb(var(--ink, 26 23 20)); color: rgb(var(--bg, 250 246 240)); } .ds-chip:focus-visible { outline: none; box-shadow: 0 0 0 2px rgb(var(--bg, 250 246 240)), 0 0 0 4px rgb(var(--coral, 214 63 34)); }"
+    },
+    {
+      "name": "Badges de rôle",
+      "kind": "chip",
+      "refersTo": "kind-badge-offer",
+      "description": "Le rôle d'une annonce : corail « J'invite », safran « Invite-moi ».",
+      "html": "<div class=\"ds-badges\"><span class=\"ds-badge ds-badge--offer\">J'invite</span><span class=\"ds-badge ds-badge--wish\">Invite-moi</span></div>",
+      "css": ".ds-badges { display: flex; gap: 8px; } .ds-badge { display: inline-flex; align-items: center; border-radius: 9999px; padding: 4px 10px; font-family: \"Inter Variable\", system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.025em; text-transform: uppercase; } .ds-badge--offer { background: rgb(var(--coral, 214 63 34)); color: #fff; } .ds-badge--wish { background: rgb(var(--saffron, 246 182 52)); color: #2A1F00; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Liens de l'en-tête desktop en pastilles ; l'actif s'inverse en encre.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav__link\" aria-current=\"page\" href=\"#\">Explorer</a><a class=\"ds-nav__link\" href=\"#\">Mes sorties <span class=\"ds-nav__count\">3</span></a></nav>",
+      "css": ".ds-nav { display: flex; gap: 4px; } .ds-nav__link { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px; border-radius: 9999px; color: rgb(var(--ink, 26 23 20)); font-family: \"Inter Variable\", system-ui, sans-serif; font-size: 15px; font-weight: 500; text-decoration: none; transition: background-color 150ms; } .ds-nav__link:hover { background: rgb(var(--sunken, 243 237 228)); } .ds-nav__link[aria-current=\"page\"] { background: rgb(var(--ink, 26 23 20)); color: rgb(var(--bg, 250 246 240)); } .ds-nav__link:focus-visible { outline: none; box-shadow: 0 0 0 2px rgb(var(--bg, 250 246 240)), 0 0 0 4px rgb(var(--coral, 214 63 34)); } .ds-nav__count { display: grid; place-items: center; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 9999px; background: rgb(var(--coral, 214 63 34)); color: #fff; font-size: 11px; font-weight: 700; line-height: 1; box-shadow: 0 0 0 2px rgb(var(--surface, 255 255 255)); }"
+    },
+    {
+      "name": "Carte d'annonce",
+      "kind": "card",
+      "refersTo": "card-event",
+      "description": "Annonce dans la liste : couverture en affiche de catégorie, tampon de date, badge de rôle, puis titre et hôte.",
+      "html": "<a class=\"ds-card\" href=\"#\"><div class=\"ds-card__cover\"><div class=\"ds-card__stamp\"><div class=\"ds-card__wd\">VEN.</div><div class=\"ds-card__day\">21</div></div><span class=\"ds-card__badge\">J'invite</span><span class=\"ds-card__cat\">Concert</span></div><div class=\"ds-card__body\"><h3 class=\"ds-card__title\">Soirée jazz au Duc des Lombards</h3><p class=\"ds-card__meta\">21:00 · Duc des Lombards</p><p class=\"ds-card__host\"><span class=\"ds-card__avatar\">M</span><strong>Malik</strong> · invite</p></div></a>",
+      "css": ".ds-card { display: flex; flex-direction: column; width: 300px; overflow: hidden; border-radius: 24px; border: 1px solid rgb(var(--line, 231 222 210)); background: rgb(var(--surface, 255 255 255)); color: rgb(var(--ink, 26 23 20)); text-decoration: none; font-family: \"Inter Variable\", system-ui, sans-serif; box-shadow: 0 1px 2px rgb(var(--shadow, 60 40 20) / 0.06), 0 8px 24px -12px rgb(var(--shadow, 60 40 20) / 0.18); transition: transform 200ms; } .ds-card:hover { transform: translateY(-2px); } .ds-card:focus-visible { outline: none; box-shadow: 0 0 0 2px rgb(var(--bg, 250 246 240)), 0 0 0 4px rgb(var(--coral, 214 63 34)); } .ds-card__cover { position: relative; height: 144px; padding: 16px; background: #5B3FB8; color: #FBF4EA; display: flex; flex-direction: column; justify-content: space-between; } .ds-card__stamp { align-self: flex-start; border-radius: 12px; background: #FBF4EA; color: #1A1714; padding: 6px 10px; text-align: center; line-height: 1; } .ds-card__wd { font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #6B635A; } .ds-card__day { font-family: \"Bricolage Grotesque Variable\", system-ui, sans-serif; font-size: 20px; font-weight: 700; } .ds-card__badge { position: absolute; top: 16px; right: 16px; border-radius: 9999px; padding: 4px 10px; background: rgb(var(--coral, 214 63 34)); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.025em; text-transform: uppercase; box-shadow: 0 0 0 2px rgb(251 244 234 / 0.9); } .ds-card__cat { font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; opacity: 0.9; } .ds-card__body { padding: 16px; } .ds-card__title { margin: 0; font-family: \"Bricolage Grotesque Variable\", system-ui, sans-serif; font-size: 18px; font-weight: 600; line-height: 1.375; letter-spacing: -0.025em; } .ds-card__meta { margin: 6px 0 0; font-size: 14px; color: rgb(var(--muted, 107 99 90)); } .ds-card__host { margin: 16px 0 0; display: flex; align-items: center; gap: 8px; font-size: 14px; } .ds-card__avatar { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 9999px; background: #24304F; color: #FBF4EA; font-family: \"Bricolage Grotesque Variable\", system-ui, sans-serif; font-weight: 600; font-size: 13px; }"
+    },
+    {
+      "name": "Billet « J'invite »",
+      "kind": "custom",
+      "refersTo": "ticket-offer",
+      "description": "Billet à talon en papier corail fixe : encoches, perforation percée, ligne de contrôle et talon détachable.",
+      "html": "<article class=\"ds-ticket-offer\"><div class=\"ds-ticket-offer__main\"><div class=\"ds-ticket-offer__control\"><span>J'invite</span><span>Concert · N° 0412</span></div><h3 class=\"ds-ticket-offer__title\">Soirée jazz au Duc des Lombards</h3><div class=\"ds-ticket-offer__meta\"><span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 2v4\"/><path d=\"M16 2v4\"/><rect width=\"18\" height=\"18\" x=\"3\" y=\"4\" rx=\"2\"/><path d=\"M3 10h18\"/></svg> Jeu. · 21:00</span><span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg> Duc des Lombards</span></div><p class=\"ds-ticket-offer__host\">Offert par <strong>Malik</strong></p></div><button type=\"button\" class=\"ds-ticket-offer__stub\"><span class=\"ds-ticket-offer__perf\" aria-hidden=\"true\"></span><span class=\"ds-ticket-offer__cta\">Je veux venir</span><span class=\"ds-ticket-offer__hint\">Détacher le talon <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></span><span class=\"ds-ticket-offer__control\">Pour deux · N° 0412</span></button></article>",
+      "css": ".ds-ticket-offer { display: flex; max-width: 720px; filter: drop-shadow(0 18px 28px rgb(var(--shadow, 60 40 20) / 0.22)); color: #FFFFFF; font-family: \"Inter Variable\", system-ui, sans-serif; } .ds-ticket-offer__main { flex: 1; min-width: 0; padding: 28px; background: #D63F22; border-radius: 22px 0 0 22px; -webkit-mask: radial-gradient(circle at 100% 0, #0000 14px, #000 14.5px) top / 100% 51% no-repeat, radial-gradient(circle at 100% 100%, #0000 14px, #000 14.5px) bottom / 100% 51% no-repeat; mask: radial-gradient(circle at 100% 0, #0000 14px, #000 14.5px) top / 100% 51% no-repeat, radial-gradient(circle at 100% 100%, #0000 14px, #000 14.5px) bottom / 100% 51% no-repeat; } .ds-ticket-offer__control { display: flex; justify-content: space-between; gap: 12px; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; font-variant-numeric: tabular-nums; } .ds-ticket-offer__main > .ds-ticket-offer__control { padding-bottom: 12px; border-bottom: 1px solid rgb(255 255 255 / 0.3); } .ds-ticket-offer__main > .ds-ticket-offer__control span:last-child { color: #FFFFFF; } .ds-ticket-offer__title { margin: 16px 0 0; font-family: \"Bricolage Grotesque Variable\", system-ui, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.08; letter-spacing: -0.025em; text-wrap: balance; } .ds-ticket-offer__meta { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 15px; color: #FFFFFF; } .ds-ticket-offer__meta span { display: inline-flex; align-items: center; gap: 6px; } .ds-ticket-offer__host { margin: 20px 0 0; font-size: 15px; } .ds-ticket-offer__host strong { font-weight: 600; } .ds-ticket-offer__stub { position: relative; width: 176px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 12px; padding: 16px 24px; background: #D63F22; color: #FFFFFF; border: 0; border-radius: 0 22px 22px 0; text-align: left; cursor: grab; font-family: \"Inter Variable\", system-ui, sans-serif; transition: background-color 150ms, transform 300ms cubic-bezier(0.16, 1, 0.3, 1); -webkit-mask: radial-gradient(circle at 0 0, #0000 14px, #000 14.5px) top / 100% 51% no-repeat, radial-gradient(circle at 0 100%, #0000 14px, #000 14.5px) bottom / 100% 51% no-repeat; mask: radial-gradient(circle at 0 0, #0000 14px, #000 14.5px) top / 100% 51% no-repeat, radial-gradient(circle at 0 100%, #0000 14px, #000 14.5px) bottom / 100% 51% no-repeat; } .ds-ticket-offer__stub:hover { background: #C2381E; transform: translateX(4px) rotate(-1.5deg); } .ds-ticket-offer__stub:focus-visible { outline: none; box-shadow: 0 0 0 2px rgb(var(--bg, 250 246 240)), 0 0 0 4px rgb(var(--coral, 214 63 34)); } .ds-ticket-offer__perf { position: absolute; left: 4px; top: 20px; bottom: 20px; width: 6px; background-image: radial-gradient(circle, rgb(var(--bg, 250 246 240)) 2.2px, transparent 2.6px); background-size: 6px 12px; background-repeat: repeat-y; } .ds-ticket-offer__cta { font-family: \"Bricolage Grotesque Variable\", system-ui, sans-serif; font-size: 24px; font-weight: 700; line-height: 1.25; } .ds-ticket-offer__hint { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; color: #FFFFFF; } .ds-ticket-offer__hint svg { transition: transform 150ms; } .ds-ticket-offer__stub:hover .ds-ticket-offer__hint svg { transform: translateX(4px); } .ds-ticket-offer__stub .ds-ticket-offer__control { color: #FFFFFF; } @media (prefers-reduced-motion: reduce) { .ds-ticket-offer__stub, .ds-ticket-offer__hint svg { transition: none; } .ds-ticket-offer__stub:hover { transform: none; } }"
+    },
+    {
+      "name": "Billet « Invite-moi »",
+      "kind": "custom",
+      "refersTo": "ticket-wish",
+      "description": "Le même billet en papier safran fixe, encre brune ; même taille et même poids que le corail.",
+      "html": "<article class=\"ds-ticket-wish\"><div class=\"ds-ticket-wish__main\"><div class=\"ds-ticket-wish__control\"><span>Invite-moi</span><span>Théâtre · N° 0412</span></div><h3 class=\"ds-ticket-wish__title\">La Traviata à l’Opéra Bastille</h3><div class=\"ds-ticket-wish__meta\"><span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 2v4\"/><path d=\"M16 2v4\"/><rect width=\"18\" height=\"18\" x=\"3\" y=\"4\" rx=\"2\"/><path d=\"M3 10h18\"/></svg> Jeu. · 21:00</span><span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg> Duc des Lombards</span></div><p class=\"ds-ticket-wish__host\"><strong>Sofia</strong> cherche qui l’invite</p></div><button type=\"button\" class=\"ds-ticket-wish__stub\"><span class=\"ds-ticket-wish__perf\" aria-hidden=\"true\"></span><span class=\"ds-ticket-wish__cta\">Je l'invite</span><span class=\"ds-ticket-wish__hint\">Détacher le talon <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></span><span class=\"ds-ticket-wish__control\">Pour deux · N° 0412</span></button></article>",
+      "css": ".ds-ticket-wish { display: flex; max-width: 720px; filter: drop-shadow(0 18px 28px rgb(var(--shadow, 60 40 20) / 0.22)); color: #2A1F00; font-family: \"Inter Variable\", system-ui, sans-serif; } .ds-ticket-wish__main { flex: 1; min-width: 0; padding: 28px; background: #F6B634; border-radius: 22px 0 0 22px; -webkit-mask: radial-gradient(circle at 100% 0, #0000 14px, #000 14.5px) top / 100% 51% no-repeat, radial-gradient(circle at 100% 100%, #0000 14px, #000 14.5px) bottom / 100% 51% no-repeat; mask: radial-gradient(circle at 100% 0, #0000 14px, #000 14.5px) top / 100% 51% no-repeat, radial-gradient(circle at 100% 100%, #0000 14px, #000 14.5px) bottom / 100% 51% no-repeat; } .ds-ticket-wish__control { display: flex; justify-content: space-between; gap: 12px; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; font-variant-numeric: tabular-nums; } .ds-ticket-wish__main > .ds-ticket-wish__control { padding-bottom: 12px; border-bottom: 1px solid rgb(42 31 0 / 0.2); } .ds-ticket-wish__main > .ds-ticket-wish__control span:last-child { color: #3D2D00; } .ds-ticket-wish__title { margin: 16px 0 0; font-family: \"Bricolage Grotesque Variable\", system-ui, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.08; letter-spacing: -0.025em; text-wrap: balance; } .ds-ticket-wish__meta { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 15px; color: #3D2D00; } .ds-ticket-wish__meta span { display: inline-flex; align-items: center; gap: 6px; } .ds-ticket-wish__host { margin: 20px 0 0; font-size: 15px; } .ds-ticket-wish__host strong { font-weight: 600; } .ds-ticket-wish__stub { position: relative; width: 176px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 12px; padding: 16px 24px; background: #F6B634; color: #2A1F00; border: 0; border-radius: 0 22px 22px 0; text-align: left; cursor: grab; font-family: \"Inter Variable\", system-ui, sans-serif; transition: background-color 150ms, transform 300ms cubic-bezier(0.16, 1, 0.3, 1); -webkit-mask: radial-gradient(circle at 0 0, #0000 14px, #000 14.5px) top / 100% 51% no-repeat, radial-gradient(circle at 0 100%, #0000 14px, #000 14.5px) bottom / 100% 51% no-repeat; mask: radial-gradient(circle at 0 0, #0000 14px, #000 14.5px) top / 100% 51% no-repeat, radial-gradient(circle at 0 100%, #0000 14px, #000 14.5px) bottom / 100% 51% no-repeat; } .ds-ticket-wish__stub:hover { background: #EEAA22; transform: translateX(4px) rotate(-1.5deg); } .ds-ticket-wish__stub:focus-visible { outline: none; box-shadow: 0 0 0 2px rgb(var(--bg, 250 246 240)), 0 0 0 4px rgb(var(--coral, 214 63 34)); } .ds-ticket-wish__perf { position: absolute; left: 4px; top: 20px; bottom: 20px; width: 6px; background-image: radial-gradient(circle, rgb(var(--bg, 250 246 240)) 2.2px, transparent 2.6px); background-size: 6px 12px; background-repeat: repeat-y; } .ds-ticket-wish__cta { font-family: \"Bricolage Grotesque Variable\", system-ui, sans-serif; font-size: 24px; font-weight: 700; line-height: 1.25; } .ds-ticket-wish__hint { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; color: #3D2D00; } .ds-ticket-wish__hint svg { transition: transform 150ms; } .ds-ticket-wish__stub:hover .ds-ticket-wish__hint svg { transform: translateX(4px); } .ds-ticket-wish__stub .ds-ticket-wish__control { color: #3D2D00; } @media (prefers-reduced-motion: reduce) { .ds-ticket-wish__stub, .ds-ticket-wish__hint svg { transition: none; } .ds-ticket-wish__stub:hover { transform: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le Billet pour deux",
+    "overview": "Invite Moi est un guichet de quartier pour sorties à deux. Le fond est un papier crème chaud, l'encre presque noire, et deux couleurs seulement portent du sens : le corail de « J'invite » et le safran de « Invite-moi ». Tout le reste (surfaces blanches, creux sable, filets beige) reste en retrait pour que ces deux rôles se lisent d'un coup d'œil, sur la carte d'une annonce comme sur un billet.\n\nLa matière du système est imprimée, pas numérique : des affiches de catégorie en aplat avec un pictogramme géant et un tampon de date, et, depuis l'accueil, des billets à talon en papier corail ou safran, encochés en demi-lune, perforés d'une ligne de trous, numérotés et contrôlés en petites capitales. Le billet est l'objet du logo (deux tickets et un cœur) rendu concret. La densité est celle d'une app mobile : une colonne, des pastilles arrondies, des cartes généreuses, des titres Bricolage serrés et un texte Inter à 15px.\n\nLe geste est physique mais bref : un talon se détache le long des pointillés, une carte se trie d'un glissement, une feuille monte du bas. Rien ne clignote, rien ne flotte sans raison, et `prefers-reduced-motion` coupe le mouvement du talon.",
+    "keyCharacteristics": [
+      "Fond crème chaud, encre presque noire, ombres teintées de brun.",
+      "Deux rôles, deux couleurs : corail « J'invite », safran « Invite-moi », jamais permutées.",
+      "Billets à talon en papier fixe, identiques en clair et en sombre.",
+      "Titres Bricolage Grotesque serrés, texte Inter, petites capitales réservées aux lignes de contrôle.",
+      "Actions en pastilles (`rounded-full`), conteneurs en grands arrondis doux.",
+      "Mode clair et sombre complets, pilotés par des variables CSS en triplets RGB."
+    ],
+    "rules": [
+      {
+        "name": "The Two Roles Rule",
+        "body": "Le corail désigne toujours « J'invite » (l'hôte offre), le safran toujours « Invite-moi » (la personne cherche un hôte). Une surface qui montre un rôle prend sa couleur ; aucune autre couleur ne représente un rôle, et les deux ne s'échangent jamais.",
+        "section": "colors"
+      },
+      {
+        "name": "The Equal Footing Rule",
+        "body": "Les deux rôles se valent : un billet safran a la même taille, la même typographie, la même mise en page et le même poids visuel qu'un billet corail. Seuls le papier et l'encre changent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Fixed Paper Rule",
+        "body": "Les papiers de billet et les affiches de catégorie gardent la même teinte en clair et en sombre, comme un objet imprimé. Ils ne portent que leurs encres fixes (`on-coral`, `on-saffron`, `poster-cream`), jamais une couleur de thème comme `ink` ou `muted`.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Bricolage pour ce qu'on imprimerait en grand (titres, action du talon, chiffre du tampon de date, logotype) ; Inter pour tout ce qu'on lit, y compris les boutons. Pas de troisième famille.",
+        "section": "typography"
+      },
+      {
+        "name": "The Control Line Rule",
+        "body": "Les petites capitales espacées à 0.14em appartiennent à la ligne de contrôle d'un billet : rôle, catégorie, numéro de série. Elles se placent dans le billet, en bord de filet, jamais en surtitre au-dessus d'un titre.",
+        "section": "typography"
+      },
+      {
+        "name": "The Warm Shadow Rule",
+        "body": "Toute ombre passe par `--shadow` (ou par `--coral` pour une lueur) ; jamais un noir neutre écrit en dur en mode clair.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Masked Paper Rule",
+        "body": "Une pièce de billet découpée par `mask` ne porte jamais de `box-shadow`, que le masque couperait : l'ombre va sur le conteneur, en `drop-shadow`, pour suivre les encoches.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** donner à chaque surface de rôle la couleur de son rôle : `coral` / `coral-paper` pour « J'invite », `saffron` / `saffron-paper` pour « Invite-moi ».",
+      "**Do** passer par les variables de thème (`bg`, `surface`, `sunken`, `ink`, `muted`, `line`) pour tout ce qui n'est pas papier imprimé, afin que le mode sombre suive sans code en plus.",
+      "**Do** utiliser `coral-paper` (#D63F22) sous un texte blanc de petite taille en mode sombre, comme le bouton principal : le `coral` sombre ne donne que 4:1 avec le blanc.",
+      "**Do** construire tout nouveau billet avec `.ticket-main`, `.ticket-stub` et `.ticket-perf`, l'ombre en `drop-shadow` sur le conteneur, et la ligne de contrôle avec un numéro `serial()`.",
+      "**Do** garder les actions en pastilles complètes et les conteneurs en grands arrondis (16, 24 ou 28px).",
+      "**Do** respecter `prefers-reduced-motion` pour tout geste décoratif, comme le fait le talon."
+    ],
+    "donts": [
+      "**Don't** utiliser le corail ou le safran pour décorer une surface qui ne parle pas d'un rôle, ni les permuter.",
+      "**Don't** faire varier les papiers de billet ou les affiches selon le thème, ni y poser `ink` ou `muted`.",
+      "**Don't** mettre les petites capitales de contrôle en surtitre au-dessus d'un titre : elles vivent dans le billet.",
+      "**Don't** dessiner la perforation d'un grand billet en bordure pointillée : c'est une rangée de trous ; la bordure pointillée est réservée au talon miniature du rail.",
+      "**Don't** illustrer une annonce par une photo : une couverture est une affiche de catégorie, un pictogramme et un tampon de date.",
+      "**Don't** ajouter de sections de fonctionnalités à icônes, de chiffres ou de témoignages : pas de ton startup SaaS.",
+      "**Don't** redessiner le logo (deux tickets et un cœur) : seules ses couleurs peuvent changer."
+    ]
+  }
+}
