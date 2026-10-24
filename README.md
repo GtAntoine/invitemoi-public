@@ -5,9 +5,9 @@
 **🔗 Démo en ligne :** [invitemoi.netlify.app](https://invitemoi.netlify.app/)
 
 <div align="center">
-  <img src="./public/images/landing-head.png" alt="Page d'accueil InviteMoi" width="100%" />
+  <img src="./public/images/v2-accueil.png" alt="Page d'accueil de la V2 d'InviteMoi : deux billets à talon, « J'invite » et « Invite-moi »" width="100%" />
   <br/>
-  <em>Page d'accueil de l'application</em>
+  <em>Page d'accueil de la V2 : chaque billet est une vraie annonce de la démo, on détache le talon pour y répondre</em>
 </div>
 
 ---
@@ -15,6 +15,12 @@
 ## ✨ Nouveau : la V2 en démo interactive
 
 La V2 repense tout le parcours et adopte une nouvelle identité visuelle (corail, safran, typographie éditoriale). Elle tourne entièrement dans le navigateur, sans compte : on explore les sorties, on répond à une annonce, on publie la sienne et on trie ses candidat·es en swipe. Les autres membres sont fictifs et réagissent en direct.
+
+<div align="center">
+  <img src="./public/images/v2-accueil-mobile.png" alt="Accueil de la V2 sur mobile" width="30%" />
+  &nbsp;
+  <img src="./public/images/v2-accueil-sombre.png" alt="Accueil de la V2 en mode sombre" width="66%" />
+</div>
 
 - **Ce qui a changé et pourquoi** : [06 - Refonte V2](./docs/06-refonte-v2.md)
 - **Lancer en local** : `npm install && npm run dev`
