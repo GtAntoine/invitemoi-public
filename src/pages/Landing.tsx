@@ -120,7 +120,7 @@ export function LandingPage() {
                 <button
                   type="button"
                   onClick={() => enter(`/sortie/${o.id}`)}
-                  className="group flex h-full w-[248px] overflow-hidden rounded-2xl bg-surface text-left shadow-card transition-transform duration-200 hover:-translate-y-1"
+                  className="group relative flex h-full w-[248px] overflow-hidden rounded-2xl bg-surface text-left shadow-card transition-transform duration-200 hover:-translate-y-1"
                 >
                   <span
                     className={clsx(
