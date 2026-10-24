@@ -21,7 +21,7 @@ const tones = {
   // Le papier garde la même teinte en clair et en sombre, comme les affiches des catégories.
   offer: {
     paper: 'bg-[#D63F22] text-white',
-    soft: 'text-[#FFE6DC]',
+    soft: 'text-white',
     rule: 'border-white/30',
     stubHover: 'hover:bg-[#C2381E]',
   },

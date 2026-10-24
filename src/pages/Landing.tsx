@@ -119,7 +119,6 @@ export function LandingPage() {
               <li key={o.id} className="snap-start">
                 <button
                   type="button"
-                  aria-label={`${KINDS[o.kind].badge} : ${o.title}`}
                   onClick={() => enter(`/sortie/${o.id}`)}
                   className="group flex h-full w-[248px] overflow-hidden rounded-2xl bg-surface text-left shadow-card transition-transform duration-200 hover:-translate-y-1"
                 >
@@ -134,6 +133,7 @@ export function LandingPage() {
                     <span className="text-[11px] tabular-nums">{timeLabel(o.time)}</span>
                   </span>
                   <span className="flex min-w-0 flex-1 flex-col p-3.5">
+                    <span className="sr-only">{KINDS[o.kind].badge} :</span>
                     <span className="line-clamp-2 font-semibold leading-snug">{o.title}</span>
                     <span className="mt-auto truncate pt-2 text-sm text-muted">
                       {user(o.ownerId).firstName} · {o.city}
@@ -169,7 +169,7 @@ export function LandingPage() {
           </div>
 
           <div className="ticket-stub relative flex flex-col justify-between gap-8 rounded-b-[22px] bg-surface p-6 sm:p-10 md:w-[320px] md:rounded-r-[22px] md:rounded-bl-none">
-            <span aria-hidden className="ticket-perf absolute inset-x-6 top-1 h-1.5 md:inset-x-auto md:inset-y-6 md:left-1 md:h-auto md:w-1.5" />
+            <span aria-hidden className="ticket-perf ticket-perf-ink absolute inset-x-6 top-1 h-1.5 md:inset-x-auto md:inset-y-6 md:left-1 md:h-auto md:w-1.5" />
             <div>
               <p className="font-display text-2xl font-bold leading-tight">Deux minutes pour tout essayer.</p>
               <p className="mt-3 text-muted">

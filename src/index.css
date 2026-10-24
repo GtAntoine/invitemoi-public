@@ -104,6 +104,10 @@
     background-repeat: repeat-x;
     background-position: 0 50%;
   }
+  /* Sur un billet couleur papier, les trous se dessinent à l'encre. */
+  .ticket-perf-ink {
+    background-image: radial-gradient(circle, rgb(var(--muted) / 0.85) 2.2px, transparent 2.6px);
+  }
   @media (min-width: 768px) {
     .ticket-main {
       mask:
