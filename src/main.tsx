@@ -1,25 +1,25 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
+import { MotionConfig } from 'framer-motion';
 import App from './App';
-import { AuthProvider } from './contexts/AuthContext';
-import { EventProvider } from './contexts/event/EventContext';
-import { ThemeProvider } from './contexts/ThemeContext';
-import { NotificationProvider } from './contexts/NotificationContext';
+import { ThemeProvider } from './lib/theme';
+import { DemoProvider } from './lib/store';
+import { ToastProvider } from './components/ui/Toast';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
-      <AuthProvider>
+      <MotionConfig reducedMotion="user">
         <ThemeProvider>
-          <NotificationProvider>
-            <EventProvider>
+          <ToastProvider>
+            <DemoProvider>
               <App />
-            </EventProvider>
-          </NotificationProvider>
+            </DemoProvider>
+          </ToastProvider>
         </ThemeProvider>
-      </AuthProvider>
+      </MotionConfig>
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );

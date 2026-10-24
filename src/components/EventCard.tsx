@@ -1,203 +1,95 @@
-import React from 'react';
-import { Calendar, Clock, MapPin, HandHeart, Gift, Check, Clock3, User } from 'lucide-react';
-import { Event } from '../types/event';
-import { format } from 'date-fns';
-import { fr } from 'date-fns/locale';
-import { calculateAge } from '../utils/dateUtils';
-import { translations } from '../translations/fr';
-import { useAuth } from '../contexts/AuthContext';
-import { getCategoryIcon } from '../utils/categoryIcons';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { Clock, MapPin, Users } from 'lucide-react';
 import clsx from 'clsx';
-import { openInMaps } from '../utils/mapUtils';
+import { CATEGORIES, KINDS } from '../lib/catalog';
+import { stamp, timeLabel, plural } from '../lib/format';
+import { useDemo } from '../lib/store';
+import type { Outing } from '../lib/types';
+import { Avatar, KindBadge, Verified } from './ui/primitives';
+import { StatusPill } from './StatusPill';
 
-interface EventCardProps {
-  event: Event;
-  onApply: (eventId: string) => void;
-  onViewProfile?: (userId: string) => void;
-  currentUserId?: string;
+export function EventCover({ outing, className, large }: { outing: Outing; className?: string; large?: boolean }) {
+  const { icon: Icon, poster, label } = CATEGORIES[outing.category];
+  const s = stamp(outing.date);
+  return (
+    <div className={clsx('relative isolate overflow-hidden text-[#FBF4EA]', className)} style={{ background: poster }}>
+      <Icon
+        className={clsx('absolute -z-10 opacity-[0.16]', large ? '-bottom-16 -right-10 h-80 w-80' : '-bottom-10 -right-6 h-44 w-44')}
+        strokeWidth={1.25}
+        aria-hidden
+      />
+      <div
+        className="absolute inset-0 -z-10 opacity-40 mix-blend-soft-light"
+        style={{ background: 'radial-gradient(120% 90% at 0% 0%, #fff 0%, transparent 55%)' }}
+      />
+      <div className={clsx('flex h-full flex-col justify-between', large ? 'p-6' : 'p-4')}>
+        <div className="flex items-start justify-between gap-3">
+          <div className="rounded-xl bg-[#FBF4EA] px-2.5 py-1.5 text-center leading-none text-[#1A1714] shadow-sm">
+            <div className="text-[10px] font-bold tracking-wider text-[#6B635A]">{s.weekday}</div>
+            <div className="font-display text-xl font-bold">{s.day}</div>
+          </div>
+          <KindBadge kind={outing.kind} className="ring-2 ring-[#FBF4EA]/90" />
+        </div>
+        <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider opacity-90">
+          <Icon className="h-3.5 w-3.5" />
+          {label}
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export function EventCard({ 
-  event, 
-  onApply, 
-  onViewProfile,
-  currentUserId = '1' 
-}: EventCardProps) {
-  const { user } = useAuth();
-  const navigate = useNavigate();
-  
-  const isOfferingHost = event.eventType === 'offering-host';
-  const creatorAge = event.createdBy.birthDate ? calculateAge(event.createdBy.birthDate) : null;
-  const firstName = event.createdBy.name;
-  const isOwnEvent = event.createdBy.id === user?.id;
-
-  const hasApplied = event.applicants.some(app => app.user.id === currentUserId);
-  const userApplication = event.applicants.find(app => app.user.id === currentUserId);
-
-  const CategoryIcon = getCategoryIcon(event.category);
-
-  const handleApply = async (e: React.MouseEvent) => {
-    e.preventDefault();
-    onApply(event.id);
-  };
-
-  const handleProfileClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    if (onViewProfile) {
-      onViewProfile(event.createdBy.id);
-    }
-  };
-
-  const getApplicationStatus = () => {
-    if (!userApplication) return null;
-
-    const statusConfig = {
-      pending: {
-        message: isOfferingHost ? 'Demande envoyée' : 'Invitation envoyée',
-        icon: Clock3,
-        className: 'bg-yellow-100 text-yellow-800'
-      },
-      accepted: {
-        message: 'Candidature acceptée',
-        icon: Check,
-        className: 'bg-green-100 text-green-800'
-      },
-      rejected: {
-        message: 'Candidature refusée',
-        icon: Check,
-        className: 'bg-red-100 text-red-800'
-      }
-    };
-
-    return statusConfig[userApplication.status];
-  };
-
-  const applicationStatus = getApplicationStatus();
+export function EventCard({ outing, className }: { outing: Outing; className?: string }) {
+  const { user, applicationsFor, myApplicationTo, me } = useDemo();
+  const owner = user(outing.ownerId);
+  const apps = applicationsFor(outing.id);
+  const mine = myApplicationTo(outing.id);
+  const isOwn = outing.ownerId === me?.id;
+  const matched = apps.some((a) => a.status === 'accepted');
 
   return (
-    <Link 
-      to={`/events/${event.id}`}
+    <Link
+      to={`/sortie/${outing.id}`}
       className={clsx(
-        "block bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300",
-        "transform hover:-translate-y-1",
-        isOfferingHost 
-          ? "border-l-4 border-l-secondary-500" 
-          : "border-l-4 border-l-primary-500"
+        'group flex flex-col overflow-hidden rounded-3xl border border-line bg-surface shadow-card transition-transform duration-200 hover:-translate-y-0.5',
+        className,
       )}
     >
-      <div className="p-3">
-        {/* Title and Category */}
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <div className="flex items-center gap-2">
-            {CategoryIcon && (
-              <div className={clsx(
-                "p-2 rounded-full shadow-sm flex-shrink-0",
-                isOfferingHost 
-                  ? "bg-gradient-to-r from-secondary-500 to-secondary-600"
-                  : "bg-gradient-to-r from-primary-500 to-primary-600"
-              )}>
-                <CategoryIcon className="w-4 h-4 text-white" />
-              </div>
-            )}
-            <h3 className="text-sm font-bold text-gray-900">{event.title}</h3>
-          </div>
-          
-          {/* Creator Profile */}
-          <div 
-            onClick={handleProfileClick}
-            className="flex items-center bg-gray-50 rounded-full hover:bg-gray-100 pr-3
-                     transition-all duration-300 cursor-pointer"
-          >
-            {event.createdBy.avatar ? (
-              <img
-                src={event.createdBy.avatar}
-                alt={event.createdBy.name}
-                className="w-8 h-8 min-w-8 min-h-8 object-cover rounded-full border-2 border-white shadow-sm"
-              />
-            ) : (
-              <User 
-                className="w-8 h-8 rounded-full border-2 border-white shadow-sm text-gray-500"
-              />
-            )}
-            <div className="ml-2 max-w-24 overflow-hidden">
-              <p className="text-sm font-medium text-gray-900 truncate">
-                {firstName}
-                {creatorAge && <span className="text-gray-500 ml-2">{creatorAge} ans</span>}
-              </p>
-            </div>
-          </div>
+      <EventCover outing={outing} className="h-36" />
+      <div className="flex flex-1 flex-col p-4">
+        <h3 className="text-lg font-semibold leading-snug text-balance">{outing.title}</h3>
+        <div className="mt-1.5 flex items-center gap-x-3 gap-y-1 text-sm text-muted">
+          <span className="inline-flex items-center gap-1">
+            <Clock className="h-3.5 w-3.5" />
+            {timeLabel(outing.time)}
+          </span>
+          <span className="inline-flex min-w-0 items-center gap-1">
+            <MapPin className="h-3.5 w-3.5 shrink-0" />
+            <span className="truncate">{outing.venue}</span>
+          </span>
         </div>
 
-        <p className="text-gray-600 mb-3 line-clamp-6 text-sm">{event.description}</p>
-
-        {/* Event Details */}
-        <div className="flex gap-3 justify-between">
-          <div className="space-y-1 text-xs w-full">
-            <div className="flex items-center gap-4 text-gray-600">
-              <div className="flex items-center">
-                <Calendar className="w-3 h-3 mr-1 text-primary-500" />
-                <span>{format(new Date(event.date), 'PPP', { locale: fr })}</span>
-              </div>
-              <div className="flex items-center">
-                <Clock className="w-3 h-3 mr-1 text-primary-500" />
-                <span>{event.time.slice(0, 5)}</span>
-              </div>
-            </div>
-            <div className="flex items-center text-gray-600">
-               <button
-                  onClick={(e) => {
-                    e.preventDefault(); // Empêcher la navigation vers la page de l'événement
-                    e.stopPropagation(); // Empêcher la propagation du clic
-                    openInMaps(event.location);
-                  }}
-                  className="flex items-center w-full text-gray-600 hover:text-primary-600 transition-colors"
-                >
-                  <MapPin className="w-3 h-3 mr-1 text-primary-500" />
-                  <span className="font-semibold truncate">{event.location}</span>
-                </button>
-            </div>
+        <div className="mt-auto flex items-center justify-between gap-3 pt-4">
+          <div className="flex min-w-0 items-center gap-2">
+            <Avatar user={owner} size={30} />
+            <p className="min-w-0 truncate text-sm">
+              <span className="font-semibold">{isOwn ? 'Toi' : owner.firstName}</span>
+              {!isOwn && <span className="text-muted">, {owner.age} ans</span>}
+              <span className="text-muted"> · {isOwn ? (outing.kind === 'offer' ? 'tu invites' : 'tu cherches un hôte') : KINDS[outing.kind].ownerVerb}</span>
+            </p>
+            {owner.verified && !isOwn && <Verified className="shrink-0" />}
           </div>
-          
-        </div>
-        {/* Application Status or Button */}
-          {!isOwnEvent && (
-            hasApplied ? (
-              <div className={clsx(
-                'flex self-end items-center mt-3 h-fit justify-center gap-1 py-1.5 px-3 rounded-full text-center text-sm font-medium',
-                applicationStatus?.className
-              )}>
-                {applicationStatus?.icon && <applicationStatus.icon className="w-3 h-3" />}
-                <span>{applicationStatus?.message}</span>
-              </div>
-            ) : (
-              <button
-                onClick={handleApply}
-                disabled={event.status !== 'open'}
-                className={clsx(
-                  "w-auto ml-auto mt-3 py-2 px-4 h-fit	rounded-full text-sm font-medium shadow-sm",
-                  "flex self-end	items-center justify-center gap-1",
-                  "transform transition-all duration-300 hover:scale-105",
-                  "disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none",
-                  isOfferingHost
-                    ? "bg-gradient-to-r from-secondary-500 to-secondary-600 text-white hover:from-secondary-600 hover:to-secondary-700"
-                    : "bg-gradient-to-r from-primary-500 to-primary-600 text-white hover:from-primary-600 hover:to-primary-700"
-                )}
-              >
-                {isOfferingHost ? (
-                  <>
-                    <HandHeart className="w-4 h-4" />
-                    {translations.events.applyAsGuest}
-                  </>
-                ) : (
-                  <>
-                    <Gift className="w-4 h-4" />
-                    {translations.events.offerToHost}
-                  </>
-                )}
-              </button>
-            )
+          {mine ? (
+            <StatusPill status={mine.status} kind={outing.kind} />
+          ) : matched ? (
+            <span className="shrink-0 rounded-full bg-sunken px-2.5 py-1 text-xs font-semibold text-muted">Complet</span>
+          ) : (
+            <span className="inline-flex shrink-0 items-center gap-1 text-xs font-medium text-muted">
+              <Users className="h-3.5 w-3.5" />
+              {apps.length > 0 ? plural(apps.length, 'intéressé·e', 'intéressé·es') : 'Réponds en premier'}
+            </span>
           )}
+        </div>
       </div>
     </Link>
   );

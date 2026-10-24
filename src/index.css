@@ -1,56 +1,90 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import './styles/glass.css';
-@import './styles/animations.css';
-@import './styles/dark-mode.css';
-@import 'tailwindcss/utilities';
+@import '@fontsource-variable/bricolage-grotesque';
+@import '@fontsource-variable/inter';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Couleurs en triplets RGB pour garder les modificateurs d'opacité Tailwind. */
+:root {
+  --bg: 250 246 240;
+  --surface: 255 255 255;
+  --sunken: 243 237 228;
+  --ink: 26 23 20;
+  --muted: 107 99 90;
+  --line: 231 222 210;
+  --shadow: 60 40 20;
+
+  /* « J'invite » : la personne offre la sortie */
+  --coral: 214 63 34;
+  --coral-soft: 252 228 220;
+  --coral-ink: 150 40 18;
+
+  /* « Invite-moi » : la personne cherche un hôte */
+  --saffron: 246 182 52;
+  --saffron-soft: 253 240 205;
+  --saffron-ink: 122 82 0;
+
+  --success: 31 138 91;
+  --success-soft: 218 242 229;
+  --danger: 201 58 58;
+  --danger-soft: 250 225 225;
+
+  color-scheme: light;
+}
+
+.dark {
+  --bg: 20 17 14;
+  --surface: 30 26 22;
+  --sunken: 39 34 29;
+  --ink: 244 238 230;
+  --muted: 163 154 143;
+  --line: 54 47 40;
+  --shadow: 0 0 0;
+
+  --coral: 226 74 44;
+  --coral-soft: 66 30 22;
+  --coral-ink: 255 160 135;
+
+  --saffron: 246 182 52;
+  --saffron-soft: 60 45 14;
+  --saffron-ink: 250 205 110;
+
+  --success: 74 196 136;
+  --success-soft: 22 52 38;
+  --danger: 240 100 100;
+  --danger-soft: 64 26 26;
+
+  color-scheme: dark;
+}
 
 @layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
   body {
-    @apply bg-gradient-to-br from-primary-100 to-secondary-100 min-h-screen;
+    @apply bg-bg text-ink font-sans antialiased;
+    text-rendering: optimizeLegibility;
   }
-
-  .dark body {
-    @apply from-gray-900 to-gray-800;
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Barlow', sans-serif;
+  :focus-visible {
+    @apply outline-none ring-2 ring-coral ring-offset-2 ring-offset-bg;
   }
 }
 
-@layer components {
-  .btn-primary {
-    @apply bg-gradient-to-r from-primary-500 to-primary-600 
-           text-white px-6 py-2.5 rounded-full font-medium shadow-button
-           hover:from-primary-600 hover:to-primary-700 transform hover:scale-105 
-           active:scale-95 active:shadow-button-pressed active:from-primary-700 active:to-primary-800
-           transition-all duration-300;
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
   }
-
-  .btn-secondary {
-    @apply bg-gradient-to-r from-secondary-500 to-secondary-600 
-           text-white px-6 py-2.5 rounded-full font-medium shadow-button
-           hover:from-secondary-600 hover:to-secondary-700 transform hover:scale-105 
-           active:scale-95 active:shadow-button-pressed active:from-secondary-700 active:to-secondary-800
-           transition-all duration-300;
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
-
-  .card {
-    @apply bg-white rounded-xl shadow-lg hover:shadow-xl 
-           transition-all duration-300 transform hover:-translate-y-1;
+  .pb-safe {
+    padding-bottom: max(env(safe-area-inset-bottom), 0.5rem);
   }
-
-  .badge {
-    @apply px-3 py-1 rounded-full text-sm font-medium;
-  }
-
-  .badge-gradient {
-    @apply badge bg-gradient-to-r from-primary-500 to-secondary-500 text-white shadow-button;
-  }
-
-  .heading-gradient {
-    @apply font-barlow font-bold bg-gradient-to-r from-primary-600 to-secondary-600 
-           bg-clip-text text-transparent;
+  .text-balance {
+    text-wrap: balance;
   }
 }

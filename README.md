@@ -12,6 +12,16 @@
 
 ---
 
+## ✨ Nouveau : la V2 en démo interactive
+
+La V2 repense tout le parcours et adopte une nouvelle identité visuelle (corail, safran, typographie éditoriale). Elle tourne entièrement dans le navigateur, sans compte : on explore les sorties, on répond à une annonce, on publie la sienne et on trie ses candidat·es en swipe. Les autres membres sont fictifs et réagissent en direct.
+
+- **Ce qui a changé et pourquoi** : [06 - Refonte V2](./docs/06-refonte-v2.md)
+- **Lancer en local** : `npm install && npm run dev`
+- **Code V1** (Supabase, fonctions Netlify) : conservé dans [`v1/`](./v1)
+
+---
+
 ## 📑 Sommaire
 
 - [📊 Analyse de Marché](#-analyse-de-marché)
@@ -142,6 +152,9 @@ Les documents détaillés se trouvent dans le dossier [`docs/`](./docs).
 
 - **[05 - Post-Mortem & Learnings](./docs/05-post-mortem.md)**
   Analyse honnête de l'échec, causes, learnings pour futurs projets
+
+- **[06 - Refonte V2](./docs/06-refonte-v2.md)**
+  Nouveau workflow, nouvelle identité visuelle, démo autonome sans backend
 
 ---
 

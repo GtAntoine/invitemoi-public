@@ -1,0 +1,11 @@
+# Démo V2 : front statique, aucune fonction serverless.
+# Le code V1 (Supabase + fonctions Netlify) est archivé dans v1/.
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify-functions-none"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
